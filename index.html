@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFW - A fine dining Restaurant in Kuala Lumpur</title>
+	<link rel="stylesheet" href="./style.css" type="text/css" />
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three/examples/jsm/"
+    }
+  }
+</script>
+
+    <style>
+      .tiltcsstest {
+        -webkit-box-shadow: 0px 25px 20px -20px #6e6e6e94;
+        -moz-box-shadow: 0px 25px 20px -20px #6e6e6e94;
+        box-shadow: 0px 25px 20px -20px hsl(39deg 73.62% 76.68%);
+      }
+	  
+.ken-burns-slideshow {
+  overflow: hidden;
+  width: calc(100% + 96px);
+}
+
+.ken-burns-slideshow .slide {
+  position: absolute;
+  top: 0;
+  left: -96px;
+  right: -96px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(96px) scale(1);
+  animation: kenburns 24s linear infinite;
+}
+
+.ken-burns-slideshow .slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.ken-burns-slideshow .slide:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.ken-burns-slideshow .slide:nth-child(3) {
+  animation-delay: 12s;
+}
+
+.ken-burns-slideshow .slide:nth-child(4) {
+  animation-delay: 18s;
+}
+
+@keyframes kenburns {
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0px) scale(1.2);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(0px) scale(1.2);
+  }
+}
+
+.logo-text {
+  animation: spin 1s linear infinite;
+  animation-duration: 4s;
+  transform: rotate(-40deg);
+
+  /* animation-timing-function: cubic-bezier(0.75, 0.115, 0.465, 0.865); */
+  animation-timing-function: cubic-bezier(0.42, 0.115, 0.625, 0.905);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+    </style>
+	
+  </head>
+
+  <body class="overflow-hidden bg-[#1f1f1f] opacity-0">
+    <!-- Navigation -->
+    <nav id="nav" class="nav"></nav>
+
+    <div id="main" class="tiltcsstest">
+      <!-- Header -->
+      <header id="header"></header>
+
+      <!-- Page -->
+      <div class="absolute inset-0">
+        <div class="page flex h-screen w-full items-center justify-center">
+          <!-- Background -->
+          <div
+            class="ken-burns-slideshow absolute bottom-0 left-0 right-0 top-0 bg-[#1f1f1f]"
+          >
+            <img
+              src="public/images/hero1.jpg"
+              id="slide1"
+              class="slide w-full"
+              data-mobile-src="public/images/hero1-mobile-v2.jpg"
+            />
+            <img
+              src="public/images/hero2.jpg"
+              id="slide2"
+              class="slide w-full"
+              data-mobile-src="public/images/hero2-mobile-v1.jpg"
+            />
+            <img
+              src="public/images/hero3.jpg"
+              id="slide3"
+              class="slide w-full"
+              data-mobile-src="public/images/hero3-mobile-v1.jpg"
+            />
+            <img
+              src="public/images/hero4.jpg"
+              id="slide4"
+              class="slide w-full"
+              data-mobile-src="public/images/hero4-mobile-v1.jpg"
+            />
+          </div>
+
+          <!-- Info -->
+          <div
+            class="container relative mx-auto flex flex-col items-center justify-center gap-y-4 lg:gap-y-2 2xl:gap-y-3"
+          >
+            <h3
+              class="el-1 josefin-sans text-center text-base text-white antialiased opacity-0 md:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl"
+            >
+              A Culinary Experience in Kuala Lumpur
+            </h3>
+
+            <!-- Title -->
+            <h1
+              class="el-1 w-full text-center text-[45px] leading-[1.2] text-[#E5D6B3] opacity-0 sm:text-[3rem] md:text-[5rem] lg:text-[7vw] xl:text-[8vw] xl:tracking-wide 2xl:text-[9.75rem]"
+            >
+              Elevated Farm to<br />
+              Table Dining
+            </h1>
+
+            <!-- Buttons -->
+            <div
+              class="sm:border-red md:border-yellow lg:border-pink xl:border-brown 2xl:border-sky border-0 text-center text-[#FF1F00] md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl"
+            >
+              <a href="#" class="block lg:inline-block">Menu</a>
+              <span
+                class="ml-5 mr-5 hidden aspect-square h-2 rounded-full bg-[#FF1F00] md:h-3 lg:inline-block xl:h-4"
+              ></span>
+              <a href="#" class="mt-5 block lg:inline-block">Reservation</a>
+            </div>
+
+            <!-- Logo -->
+            <div
+              class="el-1 relative -bottom-40 right-0 sm:relative sm:-bottom-10 2xl:absolute 2xl:bottom-5"
+            >
+              <a
+                href="/our-journey/"
+                id="page-1-logo"
+                class="right-[130px] top-[270px] flex aspect-square h-24 cursor-pointer items-center justify-center transition hover:scale-105 sm:right-0 sm:top-0 xl:h-32 2xl:bottom-20"
+              >
+                <img src="public/images/cowlogo.png" class="w-3/5" />
+                <img src="public/images/logo-text-v1.png" class="logo-text absolute" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Whatsapp -->
+      <a href="#" id="whatsapp-button"> <img src="public/images/whatsappbg.png" alt=""> <span id="whatsapp-text">Whatsapp</span></a>
+    </div>
+
+    <!-- Back -->
+    <div id="back" class="backfirst">
+      <img
+        src="public/images/journey-screen.jpg"
+        class="absolute bottom-0 left-0 right-0 w-full object-contain"
+      />
+    </div>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./src/Home/index.js"></script>
+  </body>
+</html>

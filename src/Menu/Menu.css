@@ -1,0 +1,51 @@
+.tab-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid #ff1f00;
+}
+
+.tab-pane {
+  display: none;
+  padding: 1rem;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.accordion-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 592px;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.accordion-content {
+  width: 592px;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.accordion-content.active {
+  grid-template-rows: 1fr;
+  background-color: rgba(114, 91, 39, 0.3);
+}
+
+.scroll {
+  overflow-y: scroll !important;
+}
