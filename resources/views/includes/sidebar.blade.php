@@ -71,7 +71,77 @@
             <span class="u-sidebar-nav-menu__item-title">Whatsapp</span>
           </a>
       </li>
-</ul>
+      </ul>
+</nav>
+      <nav class="u-sidebar-nav border-top mt-5 pt-3 border-dark" >
+      <ul class="u-sidebar-nav-menu u-sidebar-nav-menu--top-level">
+        <!-- Category Setup -->
+        <li class="u-sidebar-nav-menu__item ">
+          <a class="u-sidebar-nav-menu__link" href="#" data-toggle="collapse" data-target="#category-setup-menu" aria-expanded="false" aria-controls="category-setup-menu">
+            <img src="{{ asset('img/settings.png') }}" alt="" class="u-sidebar-icon">
+            <span class="u-sidebar-nav-menu__item-title">Category Setup</span>
+          </a>
+          <ul id="category-setup-menu" class="collapse pl-4">
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span> Category</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Sub Categories</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Product Setup -->
+        <li class="u-sidebar-nav-menu__item">
+          <a class="u-sidebar-nav-menu__link" href="#" data-toggle="collapse" data-target="#product-setup-menu" aria-expanded="false" aria-controls="product-setup-menu">
+            <img src="{{ asset('img/settings.png') }}" alt="" class="u-sidebar-icon">
+            <span class="u-sidebar-nav-menu__item-title">Product Setup</span>
+          </a>
+          <ul id="product-setup-menu" class="collapse pl-4">
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Product Attributes</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Product Addon</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Product Add</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Product List</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Bulk Import</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Bulk Export</span>
+              </a>
+            </li>
+            <li class="u-sidebar-nav-menu__item">
+              <a class="u-sidebar-nav-menu__link" href="#">
+                <span>Product Reviews</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+
+      </ul>
     </nav>
   </div>
   
