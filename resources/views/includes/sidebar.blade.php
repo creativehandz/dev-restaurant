@@ -74,6 +74,28 @@
       </ul>
 </nav>
       <nav class="u-sidebar-nav border-top mt-5 pt-3 border-dark" >
+
+       <!-- POS Dropdown Menu -->
+    <li class="u-sidebar-nav-menu__item">
+      <a class="u-sidebar-nav-menu__link" href="#" data-toggle="collapse"
+      data-target="#posMenu" aria-expanded="false" aria-controls="posMenu">
+        <img src="{{ asset('img/settings.png') }}" alt="" class="u-sidebar-icon">
+        <span class="u-sidebar-nav-menu__item-title">POS</span>
+      </a>
+      <ul id="posMenu" class="collapse u-sidebar-nav-menu u-sidebar-nav-menu--second-level pl-4">
+        <li class="u-sidebar-nav-menu__item">
+          <a class="u-sidebar-nav-menu__link" href="{{ route('pos.new-sale') }}">
+            <span class="u-sidebar-nav-menu__item-title">New Sale</span>
+          </a>
+        </li>
+        <li class="u-sidebar-nav-menu__item">
+          <a class="u-sidebar-nav-menu__link" href="{{ route('pos.orders') }}">
+            <span class="u-sidebar-nav-menu__item-title">Orders</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
       <ul class="u-sidebar-nav-menu u-sidebar-nav-menu--top-level">
         <!-- Category Setup -->
         <li class="u-sidebar-nav-menu__item ">
@@ -142,6 +164,9 @@
         </li>
 
       </ul>
+
+         
+</ul>
     </nav>
   </div>
   

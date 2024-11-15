@@ -166,6 +166,15 @@ Route::get('/whatsapp', function () {
     return view('whatsapp');
 })->name('whatsapp');
 
+// pos new-sale
+Route::get('/new-sale', function () {
+    return view('newsale');
+})->name('pos.new-sale');
+
+Route::get('/orders', function () {
+    return view('orders');
+})->name('pos.orders');
+
 
 Route::post('/send-whatsapp', [TwilioController::class, 'sendWhatsApp'])->name('send.whatsapp');
 
