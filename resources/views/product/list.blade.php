@@ -13,34 +13,42 @@
     </nav>
 </div>
 <!-- End Breadcrumb -->
- <div class="mb-4 p-4">
-    <div class="card-body">
-        <div class="flex flex-col text-white justify-center" >
-        <h1>Instructions</h1>
-        <ol>
-            <li>Download the format file and fill it with proper data.</li>
-            <li>You can download the example file to understand how the data must be filled</li>
-            <li>Once you have downloaded and filled the format file upload it in the form below and submit.</li>
-            <li>After uploading products you need to edit them and set product s images and choices.</li>
-            <li>You can get category and sub-category id from their list please input the right ids.</li>
-        </ol>
-        </div>
-        <div class="max-w-lg w-full">
-        <h4 class="text-white">type</h4>
-            <div class="form-group col-5 col-md-auto mb-3 mr-3">
-                <select name="promocode" class="form-control custom-input-btn">
-                <option value="" <?php echo isset($search_inputs['promocode']) ? 'selected' : ''; ?>>Promo Code</option>
-                <option value="Yes" <?php echo (isset($search_inputs['promocode']) && $search_inputs['promocode'] == 'Yes') ? 'selected' : ''; ?>>Yes</option>
-                <option value="No" <?php echo (isset($search_inputs['promocode']) && $search_inputs['promocode'] == 'No') ? 'selected' : ''; ?>>No</option>
-                </select>
-            </div>
-          </div>
-          <div class="flex space-x-4">
-    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Reset</button>
-    <button class="px-4 py-2 bg-orange-500 text-white rounded-md">Submit</button>
+<div class="container mt-5">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <input type="search" class="form-control w-25" placeholder="Search by product name">
+    <button class="btn btn-danger">Search</button>
   </div>
-    </div>
- </div>
+
+  <table class="table table-bordered table-hover">
+    <thead class="text-center">
+      <tr>
+        <th>SL</th>
+        <th>Product Name</th>
+        <th>Selling Price</th>
+        <th>Total Sale</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <td>1</td>
+        <td><img src="desi_masala_tea.jpg" alt="Desi Masala Tea" class="img-fluid me-2" style="width: 40px; height: 40px;"> Desi Masala Tea</td>
+        <td class="text-center">1.49 CA$</td>
+        <td class="text-center">0</td>
+        <td class="text-center">
+          <input type="checkbox" class="form-check-input toggle-switch">
+        </td>
+        <td class="text-center">
+          <button class="btn btn-sm btn-edit btn-custom"><i class="bi bi-pencil"></i></button>
+          <button class="btn btn-sm btn-delete btn-custom"><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>
+      <!-- Add similar rows for other products -->
+    </tbody>
+  </table>
+</div>
 
 
 @endsection
