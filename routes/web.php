@@ -182,3 +182,46 @@ Route::post('/whatsapp', [BookingBotController::class, 'handleIncomingMessage'])
 
 // Route::post('/reviews/reply/{id}', [ReviewController::class, 'updateReply'])->name('reviews.reply');
 
+
+// sidebar category and products setup routes
+Route::get('/category', function () {
+    return view('category/category');
+})->name('category');
+
+Route::get('/sub-category', function () {
+    return view('category/subcategory');
+})->name('sub.category');
+
+// products
+
+Route::get('/product-attributes', function () {
+    return view('/product/attributes');
+})->name('product.attributes');
+
+Route::get('/product-addon', function () {
+    return view('/product/addon');
+})->name('product.addon');
+
+Route::get('/product-add', function () {
+    return view('/product/add');
+})->name('product.add');
+
+Route::get('/product-attributes', function () {
+    return view('/product/attributes');
+})->name('product.attributes');
+
+Route::get('/product-list', function () {
+    return view('/product/list');
+})->name('product.list');
+
+Route::get('/bulk-import', function () {
+    return view('/product/import');
+})->name('bulk.import');
+
+Route::get('/bulk-export', function () {
+    return view('/product/export');
+})->name('bulk.export');
+
+Route::get('/product-reviews', function () {
+    return view('/product/reviews');
+})->name('product.reviews');

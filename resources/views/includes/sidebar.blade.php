@@ -105,12 +105,12 @@
           </a>
           <ul id="category-setup-menu" class="collapse pl-4">
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('category') }}">
                 <span> Category</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('sub.category') }}">
                 <span>Sub Categories</span>
               </a>
             </li>
@@ -125,37 +125,37 @@
           </a>
           <ul id="product-setup-menu" class="collapse pl-4">
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('product.attributes') }}">
                 <span>Product Attributes</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('product.addon') }}">
                 <span>Product Addon</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('product.add') }}">
                 <span>Product Add</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('product.list') }}">
                 <span>Product List</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('bulk.import') }}">
                 <span>Bulk Import</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('bulk.export') }}">
                 <span>Bulk Export</span>
               </a>
             </li>
             <li class="u-sidebar-nav-menu__item">
-              <a class="u-sidebar-nav-menu__link" href="#">
+              <a class="u-sidebar-nav-menu__link" href="{{ route('product.reviews') }}">
                 <span>Product Reviews</span>
               </a>
             </li>
