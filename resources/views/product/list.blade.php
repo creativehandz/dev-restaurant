@@ -18,15 +18,18 @@
     <div class="row">
       <div class="col-12 col-md-5">
       <h2 class="h3 card-header-title">
-  Product List 
-  <span class="badge bg-dark ms-2 d-inline">138</span>
-</h2>
+        Product List 
+        <span class="badge bg-dark ms-2 d-inline">138</span>
+      </h2>
       </div>
-<div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
-    <input type="text" placeholder="Search by product name" class="form-control w-auto me-3" style="margin-right: 10px" />
-    <a class="btn btn-success custom-btn" href="">Search</a>
-</div>
-    </div>
+      </div>
+      <div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
+        <input type="text" placeholder="Search by product name" class="form-control w-auto me-3"/>
+        <a class="btn btn-success custom-btn" style="margin-right: 10px"  href="">Search</a>
+        <a class="btn btn-success custom-btn" style="margin-right: 10px"  href="">Import</a>
+        <a class="btn btn-primary" href="">+ Add New Product</a>
+      </div>
+    
   </header>   
 
   <div class="card-body">
