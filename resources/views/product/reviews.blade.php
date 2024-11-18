@@ -16,53 +16,67 @@
 <div class="card mb-4">
   <header class="card-header">
     <div class="row">
-      <div class="col-5">
-        <h2 class="h3 card-header-title">Review list</h2>
+      <div class="col-12 col-md-5">
+      <h2 class="h3 card-header-title">
+  Review List 
+  <span class="badge bg-dark ms-2 d-inline">2</span>
+</h2>
       </div>
-      <div class="col-7 text-end" style="text-align:right;">
-        <input type="text" placeholder="Search by product name" class="input input-bordered w-full max-w-xs" />
-        <a class="btn btn-success custom-btn" data-toggle="" href="">Search</a>
-      </div>
+<div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
+    <input type="text" placeholder="Search by product name" class="form-control w-auto me-3" />
+    <a class="btn btn-success custom-btn" href="">Search</a>
+</div>
     </div>
-</header>   
-<div class="card-body">
-<div class="table-responsive">
+  </header>   
+  <div class="card-body">
+    <div class="table-responsive">
       <table class="table table-hover" id="myTable">
         <thead style="background:#333333;">
           <tr>
-            <th scope="col" class="px-4 py-3">SL</th>
-            <th scope="col" class="px-4 py-3">Product Info</th>
-            <th scope="col" class="px-4 py-3">Customer Info</th>
-            <th scope="col" class="px-4 py-3">Review</th>
-            <th scope="col" class="px-4 py-3">Rating</th>
+            <th scope="col" class="px-2 py-2">SL</th>
+            <th scope="col" class="px-2 py-2">Product Name</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Customer Info</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Review</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Rating</th>
           </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="px-4 py-3" >1.</td>
-                <td class="px-4 py-3" >
-                    <div class=" w-4 h-4 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                        <svg class="absolute w-4 h-4 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                    </div>
-                Manchurian Gravy</td>
-                <td class="px-4 py-3" >Abel Tesfaye +1 (230) 32323</td>
-                <td class="px-4 py-3" >amazing taste!</td>
-                <td class="px-4 py-3" >3⭐️</td>
-            </tr>
-            <tr>
-                <td class="px-4 py-3" >2.</td>
-                <td class="px-4 py-3" >Chilly momos Gravy</td>
-                <td class="px-4 py-3" >Tesfaye Abel +1 (230) 32323</td>
-                <td class="px-4 py-3" >amazing taste!</td>
-                <td class="px-4 py-3" >4⭐️</td>
-            </tr>
+          <tr class="py-2">
+            <td class="px-2 py-2">1.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image">
+    <span>Manchurian Gravy 12</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Abel Tesfaye
+              <br> +1 (230) 32323</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Amazing taste!</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">3⭐️</td>
+          </tr>
+          <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Tesfaye Abel <br>+1 (230) 32323</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Amazing taste!</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">4⭐️</td>
+          </tr>
         </tbody>
-</table>
+      </table>
+    </div>
+  </div>
 </div>
-</div>
-
-
-</div>
-
-
 @endsection
