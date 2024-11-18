@@ -51,11 +51,11 @@
   <div class="row align-items-center">
     <!-- Category Image Section -->
     <div class="col-md-6 d-flex align-items-center">
-      <img src="https://admin.road2xtechnology.com/public/assets/admin/img/400x400/img2.jpg" width="80px" alt="" class="me-3">
       <div class="form-group">
+        <img src="https://admin.road2xtechnology.com/public/assets/admin/img/400x400/img2.jpg" width="80px" alt="" class="me-3">
       <div class="d-flex align-items-center">
   <label for="fileUpload2" class="me-2">Category Image</label>
-  <h4 class="mb-0 text-orange">* ratio (1:1)</h4>
+  <h4 class="mb-0 text-orange" style="color: orange;">* ratio (1:1)</h4>
 </div>
         <div class="input-group">
           <div class="custom-file">
@@ -68,11 +68,11 @@
     
     <!-- Banner Image Section -->
     <div class="col-md-6 d-flex align-items-center">
-      <img src="https://admin.road2xtechnology.com/public/assets/admin/img/900x400/img1.jpg" width="160px" alt="" class="me-3">
       <div class="form-group">
+        <img src="https://admin.road2xtechnology.com/public/assets/admin/img/900x400/img1.jpg" width="160px" alt="" class="me-3">
       <div class="d-flex align-items-center">
   <label for="fileUpload2" class="me-2">Banner Image</label>
-  <h4 class="mb-0 text-orange">* ratio (8:1)</h4>
+  <h4 class="mb-0 text-orange" style="color: orange;">* ratio (8:1)</h4>
 </div>
         <div class="input-group">
           <div class="custom-file">
@@ -84,12 +84,10 @@
     </div>
   </div>
 </div>
-
-
-    <div class="d-flex">
-      <button type="button" class="btn custom-btn me-2">Reset</button>
-      <button type="button" class="btn-success custom-btn">Submit</button>
-    </div>
+<div class="d-flex justify-content-end gap-2">
+  <button type="button" class="btn btn-danger me-2">Reset</button>
+  <button type="button" class="btn btn-primary">Submit</button>
+</div>
   </div>
 </div>
 
@@ -98,8 +96,8 @@
   <div class="card-header d-flex justify-content-between">
     <h2 class="h3">Category Table</h2>
     <div class="d-flex">
-      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search here">
-      <button type="button" class="btn custom-btn">Search</button>
+      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search by Category Name">
+      <button type="button" class="btn btn-primary">Search</button>
     </div>
   </div>
   <div class="card-body">

@@ -64,31 +64,33 @@
     <h2 class="h3">English (EN)</h2>
   </div>
   <div class="card-body">
+  <div class="container">
+  <div class="row">
     <!-- Parent Branch -->
-    <div class="mb-3">
+    <div class="col-md-6 mb-3">
       <label for="branch" class="form-label">Parent Branch *</label>
       <select id="branch" class="form-control custom-input-btn">
-      <option value="">Select Branch</option>
-                <option value="kuala-lumpur">Kuala Lumpur</option>
-                <option value="selangor">Selangor</option>
-                <option value="johor">Johor Bahru</option>
-                <option value="penang">George Town, Penang</option>
-                <option value="malacca">Malacca City</option>
-                <option value="kedah">Alor Setar, Kedah</option>
-                <option value="pahang">Kuantan, Pahang</option>
-                <option value="sabah">Kota Kinabalu, Sabah</option>
-                <option value="sarawak">Kuching, Sarawak</option>
-                <option value="terengganu">Kuala Terengganu</option>
-                <option value="perak">Ipoh, Perak</option>
-                <option value="kelantan">Kota Bharu, Kelantan</option>
-                <option value="negeri-sembilan">Seremban, Negeri Sembilan</option>
-                <option value="perlis">Kangar, Perlis</option>
-                <option value="putrajaya">Putrajaya</option>
+        <option value="">Select Branch</option>
+        <option value="kuala-lumpur">Kuala Lumpur</option>
+        <option value="selangor">Selangor</option>
+        <option value="johor">Johor Bahru</option>
+        <option value="penang">George Town, Penang</option>
+        <option value="malacca">Malacca City</option>
+        <option value="kedah">Alor Setar, Kedah</option>
+        <option value="pahang">Kuantan, Pahang</option>
+        <option value="sabah">Kota Kinabalu, Sabah</option>
+        <option value="sarawak">Kuching, Sarawak</option>
+        <option value="terengganu">Kuala Terengganu</option>
+        <option value="perak">Ipoh, Perak</option>
+        <option value="kelantan">Kota Bharu, Kelantan</option>
+        <option value="negeri-sembilan">Seremban, Negeri Sembilan</option>
+        <option value="perlis">Kangar, Perlis</option>
+        <option value="putrajaya">Putrajaya</option>
       </select>
     </div>
 
     <!-- Main Category -->
-    <div class="mb-3">
+    <div class="col-md-6 mb-3">
       <label for="mainCategory" class="form-label">Main Category *</label>
       <select id="mainCategory" class="form-control custom-input-btn">
         <option value="">Select a Category</option>
@@ -97,18 +99,24 @@
         <!-- Add more options -->
       </select>
     </div>
+  </div>
 
-    <!-- Sub Category Name -->
-    <div class="mb-3">
+  <!-- Sub Category Name -->
+  <div class="row">
+    <div class="col-md-6 mb-3">
       <label for="subCategoryName" class="form-label">Sub Category Name (EN)</label>
       <input type="text" id="subCategoryName" class="form-control custom-input-btn" placeholder="New Sub Category">
     </div>
+  </div>
 
-    <!-- Buttons -->
-    <div class="d-flex">
-      <button type="button" class="btn custom-btn me-2">Reset</button>
-      <button type="button" class="btn custom-btn">Submit</button>
+      <!-- Buttons -->
+      <div class="d-flex">
+      <button type="button" class="btn btn-danger me-2">Reset</button>
+      <button type="button" class="btn btn-primary">Submit</button>
     </div>
+</div>
+
+
   </div>
 </div>
 
@@ -117,8 +125,8 @@
   <div class="card-header d-flex justify-content-between">
     <h2 class="h3">Sub-Category Table</h2>
     <div class="d-flex">
-      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search here">
-      <button type="button" class="btn custom-btn">Search</button>
+      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search by sub category name">
+      <button type="button" class="btn btn-primary">Search</button>
     </div>
   </div>
   <div class="card-body">
@@ -127,8 +135,8 @@
         <thead>
           <tr>
             <th>S.No.</th>
-            <th>Category Image</th>
-            <th>Name</th>
+            <th>Main Category</th>
+            <th>Sub Category</th>
             <th>Status</th>
             <th>Action</th>
           </tr>
@@ -140,8 +148,8 @@
             <td>Sub Category Name</td>
             <td>Active</td>
             <td>
-              <button class="btn btn-sm btn-primary">Edit</button>
-              <button class="btn btn-sm btn-danger">Delete</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
             </td>
           </tr>
           <!-- Add more rows as needed -->
