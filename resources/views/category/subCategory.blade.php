@@ -47,8 +47,8 @@
 <!-- Start Breadcrumb -->
 <div class="mb-4">
   <nav aria-label="breadcrumb">
-    <h1 class="h3 text-white">Add a New Sub Category</h1>
-    <ol class="breadcrumb small p-0">
+    <h1 class="text-white h3">Add a New Sub Category</h1>
+    <ol class="p-0 breadcrumb small">
       <li class="breadcrumb-item">
         <a href="./index.html" class="path-color">Home</a>
       </li>
@@ -59,7 +59,7 @@
 <!-- End Breadcrumb -->
 
 <!-- Add Sub Category Form -->
-<div class="card mb-4">
+<div class="mb-4 card">
   <div class="card-header">
     <h2 class="h3">English (EN)</h2>
   </div>
@@ -67,7 +67,7 @@
   <div class="container">
   <div class="row">
     <!-- Parent Branch -->
-    <div class="col-md-6 mb-3">
+    <div class="mb-3 col-md-6">
       <label for="branch" class="form-label">Parent Branch *</label>
       <select id="branch" class="form-control custom-input-btn">
         <option value="">Select Branch</option>
@@ -90,7 +90,7 @@
     </div>
 
     <!-- Main Category -->
-    <div class="col-md-6 mb-3">
+    <div class="mb-3 col-md-6">
       <label for="mainCategory" class="form-label">Main Category *</label>
       <select id="mainCategory" class="form-control custom-input-btn">
         <option value="">Select a Category</option>
@@ -103,7 +103,7 @@
 
   <!-- Sub Category Name -->
   <div class="row">
-    <div class="col-md-6 mb-3">
+    <div class="mb-3 col-md-6">
       <label for="subCategoryName" class="form-label">Sub Category Name (EN)</label>
       <input type="text" id="subCategoryName" class="form-control custom-input-btn" placeholder="New Sub Category">
     </div>
@@ -111,7 +111,7 @@
 
       <!-- Buttons -->
       <div class="d-flex">
-      <button type="button" class="btn btn-danger me-2">Reset</button>
+      <button type="button" class="btn btn-danger me-2" style="margin-right: 10px">Reset</button>
       <button type="button" class="btn btn-primary">Submit</button>
     </div>
 </div>
@@ -121,7 +121,7 @@
 </div>
 
 <!-- Sub Category Table -->
-<div class="card mb-4">
+<div class="mb-4 card">
   <div class="card-header d-flex justify-content-between">
     <h2 class="h3">Sub-Category Table</h2>
     <div class="d-flex">

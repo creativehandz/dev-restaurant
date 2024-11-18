@@ -5,8 +5,8 @@
 <!-- Start Breadcrumb -->
 <div class="mb-4">
     <nav aria-label="breadcrumb">
-        <h1 class="h3 text-white">Add a New Category</h1>
-        <ol class="breadcrumb bg-transparent small p-0">
+        <h1 class="text-white h3">Add a New Category</h1>
+        <ol class="p-0 bg-transparent breadcrumb small">
             <li class="breadcrumb-item "><a href="./index.html" class="path-color">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Category</li>
         </ol>
@@ -15,7 +15,7 @@
 <!-- End Breadcrumb -->
 
 <!-- Add Category Form -->
-<div class="card mb-4">
+<div class="mb-4 card">
   <div class="card-header">
     <h2 class="h3">English (EN)</h2>
   </div>
@@ -84,15 +84,15 @@
     </div>
   </div>
 </div>
-<div class="d-flex justify-content-end gap-2">
-  <button type="button" class="btn btn-danger me-2">Reset</button>
+<div class="gap-2 d-flex justify-content-end">
+  <button type="button" class="btn btn-danger me-2" style="margin-right: 10px">Reset</button>
   <button type="button" class="btn btn-primary">Submit</button>
 </div>
   </div>
 </div>
 
 <!-- Category Table -->
-<div class="card mb-4">
+<div class="mb-4 card">
   <div class="card-header d-flex justify-content-between">
     <h2 class="h3">Category Table</h2>
     <div class="d-flex">
