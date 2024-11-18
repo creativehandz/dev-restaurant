@@ -159,7 +159,7 @@ Route::get('/google-reviews', [GoogleReviewsController::class, 'index']);
 Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews.index');
 
 // trip advisor 
-Route::get('/trip-advisor', [ReviewController::class, 'index'])->name('trip-advisor');
+Route::get('/trip-advisor', [ReviewController::class, 'tripAdvisor'])->name('trip-advisor');
 
 // whatsapp page
 Route::get('/whatsapp', function () {

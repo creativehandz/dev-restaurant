@@ -82,7 +82,7 @@
         <img src="{{ asset('img/settings.png') }}" alt="" class="u-sidebar-icon">
         <span class="u-sidebar-nav-menu__item-title">POS</span>
       </a>
-      <ul id="posMenu" class="collapse u-sidebar-nav-menu u-sidebar-nav-menu--second-level pl-4">
+      <ul id="posMenu" class="collapse u-sidebar-nav-menu pl-4">
         <li class="u-sidebar-nav-menu__item">
           <a class="u-sidebar-nav-menu__link" href="{{ route('pos.new-sale') }}">
             <span class="u-sidebar-nav-menu__item-title">New Sale</span>

@@ -5,10 +5,10 @@
  <!-- End Breadcrumb -->
  <div class="mb-4">
     <nav aria-label="breadcrumb">
-            <h1 class="h3 text-white">Google Review</h1>
+            <h1 class="h3 text-white">Trip Advisor</h1>
             <ol class="breadcrumb bg-transparent small p-0">
                     <li class="breadcrumb-item"><a href="./index.html" class="path-color">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Google Review</li>
+                    <li class="breadcrumb-item active" aria-current="page">Trip Advisor</li>
             </ol>
 
             
@@ -34,11 +34,11 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <h1 class="text-golden">Google Reviews</h1>
-    <h2 class="total-review-count">Total Reviews: {{ $totalReviews }}</h2>
+    <h1 class="text-golden">Trip Advisor</h1>
+    <h2 class="total-review-count">Total Advise: {{ $totalReviews }}</h2>
  
 
-    <form method="GET" action="{{ route('reviews.index') }}" class="mb-4">
+    <form method="GET" action="{{ route('trip-advisor') }}" class="mb-4">
         <div class="form-group">
             <label for="filter" class="text-white">Sort Reviews By</label>
             <select name="filter" id="filter" class="form-control">
