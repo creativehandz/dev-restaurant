@@ -23,7 +23,7 @@
 </h2>
       </div>
 <div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
-    <input type="text" placeholder="Search by product name" class="form-control w-auto me-3" />
+    <input type="text" placeholder="Search by product name" class="form-control w-auto me-3" style="margin-right: 10px" />
     <a class="btn btn-success custom-btn" href="">Search</a>
 </div>
     </div>

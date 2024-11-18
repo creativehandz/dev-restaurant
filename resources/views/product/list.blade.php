@@ -5,50 +5,71 @@
 <!-- Start Breadcrumb -->
 <div class="mb-4">
     <nav aria-label="breadcrumb">
-        <h1 class="h3 text-white">Bulk Import</h1>
+        <h1 class="h3 text-white">Product List</h1>
         <ol class="breadcrumb bg-transparent small p-0">
             <li class="breadcrumb-item "><a href="./index.html" class="path-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Bulk Import</li>
+            <li class="breadcrumb-item active" aria-current="page">Product List</li>
         </ol>
     </nav>
 </div>
 <!-- End Breadcrumb -->
-<div class="container mt-5">
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <input type="search" class="form-control w-25" placeholder="Search by product name">
-    <button class="btn btn-danger">Search</button>
+<div class="card mb-4"> 
+<header class="card-header">
+    <div class="row">
+      <div class="col-12 col-md-5">
+      <h2 class="h3 card-header-title">
+        Product List 
+        <span class="badge bg-dark ms-2 d-inline">138</span>
+      </h2>
+      </div>
+      </div>
+      <div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
+        <input type="text" placeholder="Search by product name" class="form-control w-auto me-3"/>
+        <a class="btn btn-success custom-btn" style="margin-right: 10px"  href="">Search</a>
+        <a class="btn btn-success custom-btn" style="margin-right: 10px"  href="">Import</a>
+        <a class="btn btn-primary" href="">+ Add New Product</a>
+      </div>
+    
+  </header>   
+
+  <div class="card-body">
+   <div class="flex flex-col text-white justify-center" >
+    <div class="table-responsive">
+      <table class="table table-hover" id="myTable">
+        <thead style="background:#333333;">
+          <tr>
+            <th scope="col" class="px-2 py-2">SL</th>
+            <th scope="col" class="px-2 py-2">Product Name</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Selling Price</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Total Sale</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Status</th>
+            <th scope="col" class="px-2 py-2 d-none d-md-table-cell">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="container mt-4">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+     </div>
   </div>
-
-  <table class="table table-bordered table-hover">
-    <thead class="text-center">
-      <tr>
-        <th>SL</th>
-        <th>Product Name</th>
-        <th>Selling Price</th>
-        <th>Total Sale</th>
-        <th>Status</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Row 1 -->
-      <tr>
-        <td>1</td>
-        <td><img src="desi_masala_tea.jpg" alt="Desi Masala Tea" class="img-fluid me-2" style="width: 40px; height: 40px;"> Desi Masala Tea</td>
-        <td class="text-center">1.49 CA$</td>
-        <td class="text-center">0</td>
-        <td class="text-center">
-          <input type="checkbox" class="form-check-input toggle-switch">
-        </td>
-        <td class="text-center">
-          <button class="btn btn-sm btn-edit btn-custom"><i class="bi bi-pencil"></i></button>
-          <button class="btn btn-sm btn-delete btn-custom"><i class="bi bi-trash"></i></button>
-        </td>
-      </tr>
-      <!-- Add similar rows for other products -->
-    </tbody>
-  </table>
 </div>
-
+</div>
 
 @endsection
