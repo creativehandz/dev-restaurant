@@ -22,10 +22,15 @@
   <span class="badge bg-dark ms-2 d-inline">5</span>
 </h2>
       </div>
-      <div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end gap-4">
-    <input type="text" placeholder="Search by addon name" class="form-control w-auto" style="margin-right: 10px" />
-    <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Search</a>
-    <a class="btn btn-success custom-btn" href="">+ Add Addon</a>
+      <div class="col-12 col-md-7 d-flex justify-content-end align-items-center gap-2">
+  <input 
+    type="text" 
+    id="categoryName" 
+    class="form-control custom-input-btn w-auto" 
+    placeholder="Search by Addon name" 
+  />
+  <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Search</a>
+  <a class="btn btn-primary" href="">+ Add Addon</a>
 </div>
     </div>
   </header>   
@@ -50,35 +55,40 @@
             </td>
             <td class="px-2 py-2 d-none d-md-table-cell">0.00CA$</td>
             <td class="px-2 py-2 d-none d-md-table-cell">0</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">3⭐️</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button></td>
           </tr>
           <tr class="py-2">
             <td class="px-2 py-2">2.</td>
             <td class="px-2 py-2">Garlic Base</td>
             <td class="px-2 py-2 d-none d-md-table-cell">2.00CA$</td>
             <td class="px-2 py-2 d-none d-md-table-cell">0</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">4⭐️</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button></td>
           </tr>
           <tr class="py-2">
             <td class="px-2 py-2">3.</td>
             <td class="px-2 py-2">Pineapple</td>
             <td class="px-2 py-2 d-none d-md-table-cell">2.00CA$</td>
             <td class="px-2 py-2 d-none d-md-table-cell">0</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">4⭐️</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button></td>
           </tr>
                     <tr class="py-2">
             <td class="px-2 py-2">4.</td>
             <td class="px-2 py-2">Jalepino</td>
             <td class="px-2 py-2 d-none d-md-table-cell">2.00CA$</td>
             <td class="px-2 py-2 d-none d-md-table-cell">0</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">4⭐️</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button></td>
           </tr>
           <tr class="py-2">
             <td class="px-2 py-2">5.</td>
             <td class="px-2 py-2">Tomatos</td>
             <td class="px-2 py-2 d-none d-md-table-cell">2.00CA$</td>
             <td class="px-2 py-2 d-none d-md-table-cell">0</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">4⭐️</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>  </td>
           </tr>
         </tbody>
       </table>

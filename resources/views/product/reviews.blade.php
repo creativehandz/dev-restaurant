@@ -49,7 +49,8 @@
          width="30" 
          height="30" 
          class="rounded-circle" 
-         alt="Product Image">
+         alt="Product Image"
+         style="margin-right: 5px">
     <span>Manchurian Gravy 12</span>
   </div>
 </td>
@@ -66,7 +67,8 @@
          width="30" 
          height="30" 
          class="rounded-circle" 
-         alt="Product Image">
+         alt="Product Image"
+         style="margin-right: 5px">
     <span>Chilly Paneer</span>
   </div>
 </td>
