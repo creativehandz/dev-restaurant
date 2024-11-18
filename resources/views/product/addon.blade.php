@@ -23,8 +23,8 @@
 </h2>
       </div>
       <div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end gap-4">
-    <input type="text" placeholder="Search by addon name" class="form-control w-auto" />
-    <a class="btn btn-success custom-btn" href="">Search</a>
+    <input type="text" placeholder="Search by addon name" class="form-control w-auto" style="margin-right: 10px" />
+    <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Search</a>
     <a class="btn btn-success custom-btn" href="">+ Add Addon</a>
 </div>
     </div>
