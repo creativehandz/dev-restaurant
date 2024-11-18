@@ -11167,11 +11167,11 @@ body.sidebar-mobile-closed .u-sidebar-inner {
 }
 
 .u-sidebar-invoker__icon--open {
-  display: block;
+  display: block !important;
 }
 
 .u-sidebar-invoker__icon--close {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 577px) {
