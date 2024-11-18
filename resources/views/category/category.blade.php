@@ -47,9 +47,48 @@
       <input type="text" id="categoryName" class="form-control custom-input-btn" placeholder="Enter category name">
     </div>
 
+    <div class="container mt-4">
+  <div class="row align-items-center">
+    <!-- Category Image Section -->
+    <div class="col-md-6 d-flex align-items-center">
+      <img src="https://admin.road2xtechnology.com/public/assets/admin/img/400x400/img2.jpg" width="80px" alt="" class="me-3">
+      <div class="form-group">
+      <div class="d-flex align-items-center">
+  <label for="fileUpload2" class="me-2">Category Image</label>
+  <h4 class="mb-0 text-orange">* ratio (1:1)</h4>
+</div>
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="fileUpload1">
+            <label class="custom-file-label" for="fileUpload1">Choose file</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Banner Image Section -->
+    <div class="col-md-6 d-flex align-items-center">
+      <img src="https://admin.road2xtechnology.com/public/assets/admin/img/900x400/img1.jpg" width="160px" alt="" class="me-3">
+      <div class="form-group">
+      <div class="d-flex align-items-center">
+  <label for="fileUpload2" class="me-2">Banner Image</label>
+  <h4 class="mb-0 text-orange">* ratio (8:1)</h4>
+</div>
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="fileUpload2">
+            <label class="custom-file-label" for="fileUpload2">Choose file</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <div class="d-flex">
       <button type="button" class="btn custom-btn me-2">Reset</button>
-      <button type="button" class="btn custom-btn">Submit</button>
+      <button type="button" class="btn-success custom-btn">Submit</button>
     </div>
   </div>
 </div>
@@ -78,17 +117,130 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td><img src="{{ asset('img/sample.png') }}" alt="Category" width="50"></td>
-            <td>Category Name</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Main</td>
             <td>Active</td>
             <td>
-              <button class="btn btn-sm btn-primary">Edit</button>
-              <button class="btn btn-sm btn-danger">Delete</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Popular</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Combos</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Beverages</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Salad</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Wings</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td><img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"></td>
+            <td>Wrap</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
             </td>
           </tr>
           <!-- Add more rows as needed -->
         </tbody>
       </table>
+      <div class="container mt-4">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
     </div>
   </div>
 </div>

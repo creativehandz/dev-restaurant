@@ -40,31 +40,17 @@
           <tr class="py-2">
             <td class="px-2 py-2">1.</td>
             <td class="px-2 py-2">Manchurian Gravy</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">
-             
-
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#45c2e3" width="20px" height="20px">
-    <path d="M3 21v-2.586l12.293-12.293 2.586 2.586L5.586 21H3zM21.707 5.293l-2-2a1 1 0 00-1.414 0l-1.293 1.293 2.586 2.586L21.707 6.707a1 1 0 000-1.414z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f04747" width="20px" height="20px">
-    <path d="M5 5h14v2H5V5zm2 4h2v10H7V9zm4 0h2v10h-2V9zm4 0h2v10h-2V9zm-5-4h4v-1h-4v1zM9 4h6v1H9V4z"/>
-  </svg>
-
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
             </td>
           </tr>
           <tr class="py-2">
             <td class="px-2 py-2">2.</td>
             <td class="px-2 py-2">Chilly Momos Gravy</td>
-            <td class="px-2 py-2 d-none d-md-table-cell">
-
-          
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#45c2e3" width="20px" height="20px">
-    <path d="M3 21v-2.586l12.293-12.293 2.586 2.586L5.586 21H3zM21.707 5.293l-2-2a1 1 0 00-1.414 0l-1.293 1.293 2.586 2.586L21.707 6.707a1 1 0 000-1.414z"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f04747" width="20px" height="20px">
-    <path d="M5 5h14v2H5V5zm2 4h2v10H7V9zm4 0h2v10h-2V9zm4 0h2v10h-2V9zm-5-4h4v-1h-4v1zM9 4h6v1H9V4z"/>
-  </svg>
-
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
             </td>
           </tr>
         </tbody>
