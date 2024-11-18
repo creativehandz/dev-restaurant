@@ -33,15 +33,6 @@
     background-color: #007bff;
     color: #fff;
   }
-
-  .table thead {
-    background-color: #333;
-    color: #fff;
-  }
-
-  .table tbody tr:hover {
-    background-color: #f1f1f1;
-  }
 </style>
 
 <!-- Start Breadcrumb -->
@@ -110,7 +101,7 @@
   </div>
 
       <!-- Buttons -->
-      <div class="d-flex">
+      <div class="d-flex" style="justify-content: right">
       <button type="button" class="btn btn-danger me-2" style="margin-right: 10px">Reset</button>
       <button type="button" class="btn btn-primary">Submit</button>
     </div>
@@ -123,7 +114,8 @@
 <!-- Sub Category Table -->
 <div class="mb-4 card">
   <div class="card-header d-flex justify-content-between">
-    <h2 class="h3">Sub-Category Table</h2>
+    <h2 class="h3">Sub-Category Table<span class="badge bg-dark ms-2 d-inline">4</span>
+    </h2>
     <div class="d-flex">
       <input type="search" class="form-control custom-input-btn me-2" placeholder="Search by sub category name">
       <button type="button" class="btn btn-primary">Search</button>
@@ -144,8 +136,41 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td><img src="{{ asset('img/sample.png') }}" alt="Category" width="50"></td>
-            <td>Sub Category Name</td>
+            <td>Plates</td>
+            <td>kids plate</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Pizza</td>
+            <td>mini pizza</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Sandwhiches</td>
+            <td>Toast Sandwhich</td>
+            <td>Active</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Sides</td>
+            <td>bottle</td>
             <td>Active</td>
             <td>
               <button type="button" class="btn btn-sm btn-soft-info">Edit</button>

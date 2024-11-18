@@ -17,18 +17,32 @@
 <header class="card-header">
     <div class="row">
       <div class="col-12 col-md-5">
-      <h2 class="h3 card-header-title">
-        Product List 
-        <span class="badge bg-dark ms-2 d-inline">138</span>
-      </h2>
+        <h2 class="h3 card-header-title">
+          Product List 
+          <span class="badge bg-dark ms-2 d-inline">138</span>
+        </h2>
       </div>
-      </div>
-      <div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
-        <input type="text" placeholder="Search by product name" class="form-control w-auto me-3"/>
-        <a class="btn btn-success custom-btn" style="margin-right: 10px"  href="">Search</a>
-        <a class="btn btn-success custom-btn" style="margin-right: 10px"  href="">Import</a>
-        <a class="btn btn-primary" href="">+ Add New Product</a>
-      </div>
+    </div>
+
+    <div class="row align-items-center">
+  <!-- Search Box and Button on the Left -->
+  <div class="col-12 col-md-6 d-flex align-items-center gap-2">
+    <input 
+      type="text" 
+      id="categoryName" 
+      class="form-control custom-input-btn w-auto" 
+      placeholder="Search by Addon name" 
+    />
+    <a class="btn btn-success custom-btn" href="">Search</a>
+  </div>
+  
+  <!-- Export and Add Button on the Right -->
+  <div class="col-12 col-md-6 d-flex justify-content-end gap-2">
+    <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Export</a>
+    <a class="btn btn-primary" href="">+ Add Addon</a>
+  </div>
+</div>
+</div>
     
   </header>   
 
@@ -47,6 +61,139 @@
           </tr>
         </thead>
         <tbody>
+        <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"
+         style="margin-right: 5px">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">1.49CA$</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">0</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Active</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">
+            <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"
+         style="margin-right: 5px">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">1.49CA$</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">0</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Active</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">
+            <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"
+         style="margin-right: 5px">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">1.49CA$</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">0</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Active</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">
+            <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"
+         style="margin-right: 5px">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">1.49CA$</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">0</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Active</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">
+            <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"
+         style="margin-right: 5px">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">1.49CA$</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">0</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Active</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">
+            <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+          <tr class="py-2">
+            <td class="px-2 py-2">2.</td>
+            <td class="px-2 py-2">
+  <div class="d-flex align-items-center gap-3">
+    <img src="https://admin.road2xtechnology.com/storage/app/public/product/2023-07-14-64b0f390eddce.png" 
+         width="30" 
+         height="30" 
+         class="rounded-circle" 
+         alt="Product Image"
+         style="margin-right: 5px">
+    <span>Chilly Paneer</span>
+  </div>
+</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">1.49CA$</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">0</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">Active</td>
+            <td class="px-2 py-2 d-none d-md-table-cell">
+            <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+            <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+
+
         </tbody>
       </table>
       <div class="container mt-4">

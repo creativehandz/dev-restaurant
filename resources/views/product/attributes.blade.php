@@ -5,7 +5,7 @@
 <!-- Start Breadcrumb -->
 <div class="mb-4">
     <nav aria-label="breadcrumb">
-        <h1 class="h3 text-white">Attributes</h1>
+        <h1 class="h3 text-white">Add New Attributes</h1>
         <ol class="breadcrumb bg-transparent small p-0">
             <li class="breadcrumb-item "><a href="./index.html" class="path-color">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Attributes</li>
@@ -19,12 +19,18 @@
     <div class="col-12 col-md-5">
       <h2 class="h3 card-header-title">
   Attribute Table 
-  <span class="badge bg-dark ms-2 d-inline">2</span>
+  <span class="badge bg-dark ms-2 d-inline">3</span>
 </h2>
-      </div><div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
-  <input type="text" placeholder="Search by name" class="form-control w-auto" style="margin-right: 10px;" />
-  <a class="btn btn-success custom-btn" href="" style="margin-right: 10px;">Search</a>
-  <a class="btn btn-success custom-btn" href="">+ Add Attribute</a>
+      </div>
+      <div class="col-12 col-md-7 d-flex justify-content-end align-items-center gap-2">
+  <input 
+    type="text" 
+    id="categoryName" 
+    class="form-control custom-input-btn w-auto mr-10" 
+    placeholder="Enter sub category name" 
+  />
+  <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Search</a>
+  <a class="btn btn-primary" href="">+ Add Attribute</a>
 </div>
     </div>
   </header>   
@@ -41,7 +47,7 @@
         <tbody>
           <tr class="py-2">
             <td class="px-2 py-2">1.</td>
-            <td class="px-2 py-2">Manchurian Gravy</td>
+            <td class="px-2 py-2">Cheese Burst</td>
             <td>
               <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
               <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
@@ -49,7 +55,15 @@
           </tr>
           <tr class="py-2">
             <td class="px-2 py-2">2.</td>
-            <td class="px-2 py-2">Chilly Momos Gravy</td>
+            <td class="px-2 py-2">Spicy</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
+              <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
+            </td>
+          </tr>
+          <tr class="py-2">
+            <td class="px-2 py-2">3.</td>
+            <td class="px-2 py-2">Thin Crust</td>
             <td>
               <button type="button" class="btn btn-sm btn-soft-info">Edit</button>
               <button type="button" class="btn btn-sm btn-soft-info">Delete</button>
