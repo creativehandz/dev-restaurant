@@ -13,8 +13,8 @@
     </nav>
 </div>
 <!-- End Breadcrumb -->
- <div class="mb-4 p-4">
-    <div class="card-body">
+<div class="card mb-4"> 
+  <div class="card-body">
         <div class="flex flex-col text-white justify-center" >
         <h1>Instructions</h1>
         <ol>
@@ -25,22 +25,62 @@
             <li>You can get category and sub-category id from their list please input the right ids.</li>
         </ol>
         </div>
-        <div class="max-w-lg w-full">
-        <h4 class="text-white">type</h4>
-            <div class="form-group col-5 col-md-auto mb-3 mr-3">
-                <select name="promocode" class="form-control custom-input-btn">
-                <option value="" <?php echo isset($search_inputs['promocode']) ? 'selected' : ''; ?>>Promo Code</option>
-                <option value="Yes" <?php echo (isset($search_inputs['promocode']) && $search_inputs['promocode'] == 'Yes') ? 'selected' : ''; ?>>Yes</option>
-                <option value="No" <?php echo (isset($search_inputs['promocode']) && $search_inputs['promocode'] == 'No') ? 'selected' : ''; ?>>No</option>
-                </select>
-            </div>
-          </div>
-          <div class="flex space-x-4">
-    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md">Reset</button>
-    <button class="px-4 py-2 bg-orange-500 text-white rounded-md">Submit</button>
+<!--
+          <div class="form-group mb-3 mr-3 ">
+            <button type="button" class="btn btn-light custom-btn text-dark hover:text-dark">Clear</button>
+            <button type="button" class="btn btn-light custom-btn text-dark hover:text-dark">Export</button>
+          </div> -->
   </div>
+</div>
+<div class="card mb-4">
+  <div class="card-body">
+
+    <!-- Download Link -->
+     <div class="text-center">
+    <h1>
+      Do not have the template? 
+      <a href="#" class="text-blue" style="text-decoration: none;">Download Here</a>
+    </h1>
     </div>
- </div>
+    <!-- Drag and Drop File Section -->
+    <!-- <h1>Drag the file here or import the file</h1> -->
+    <div class="form-group mb-3 mr-3">
+      <div class="border p-4 rounded d-flex justify-content-center align-items-center"
+           style="border: 2px dashed #ccc; background-color: #f9f9f9; height: 150px; position: relative;">
+        <input type="file" id="fileUpload" class="position-absolute w-100 h-100 opacity-0">
+        <div class="text-center">
+          <p>Drag & Drop or Click to Select File</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Buttons Section -->
+    <div class="form-group mb-3 text-end">
+      <button type="button" class="btn btn-light custom-btn text-dark hover:text-dark">Clear</button>
+      <button type="button" class="btn btn-primary custom-btn text-white">Export</button>
+    </div>
 
+  </div>
+</div>
+
+<!-- Custom styles for hover effect and file input visibility -->
+<style>
+  .hover\:text-dark:hover {
+    color: #000;
+  }
+
+  .custom-btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  #fileUpload {
+    display: none;
+  }
+
+  #fileUpload + div:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+</style>
 @endsection

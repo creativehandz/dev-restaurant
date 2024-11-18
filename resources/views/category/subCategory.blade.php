@@ -2,36 +2,73 @@
 
 @section('content')
 
-<!-- Start Breadcrumb -->
+<!-- Custom CSS -->
+<style>
+  .breadcrumb {
+    background: transparent;
+  }
 
+  .breadcrumb-item a.path-color {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
+
+  .custom-input-btn {
+    border-radius: 5px;
+  }
+
+  .custom-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+
+  .custom-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .table thead {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+
+<!-- Start Breadcrumb -->
 <div class="mb-4">
-    <nav aria-label="breadcrumb">
-        <h1 class="h3 text-white">Add a New Sub Category</h1>
-        <ol class="breadcrumb bg-transparent small p-0">
-            <li class="breadcrumb-item "><a href="./index.html" class="path-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">SubCategory</li>
-        </ol>
-    </nav>
+  <nav aria-label="breadcrumb">
+    <h1 class="h3 text-white">Add a New Sub Category</h1>
+    <ol class="breadcrumb small p-0">
+      <li class="breadcrumb-item">
+        <a href="./index.html" class="path-color">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">SubCategory</li>
+    </ol>
+  </nav>
 </div>
 <!-- End Breadcrumb -->
-<div class="card mb-4">
-  <div class="row">
-      <!--  -->
-      <div class="col-sm-12">
-            <div class="card">
-            <header class="card-header">
-                <div class="row">
-                    <div class="col-7 col-md-9">
-                        <h2 class="h3 card-header-title">English (EN)</h2>
-                    </div> 
-                </div>
-            </header> 
-            <div class="card-body">
 
-            <h3 class="text-white" >Parent Branch *</h3>
-            <div class="row mt-2 ml-1 mr-1">
-            <select class="form-control custom-input-btn border border-gray-300 rounded-md p-2 w-full">
-                <option value="">Select Branch</option>
+<!-- Add Sub Category Form -->
+<div class="card mb-4">
+  <div class="card-header">
+    <h2 class="h3">English (EN)</h2>
+  </div>
+  <div class="card-body">
+    <!-- Parent Branch -->
+    <div class="mb-3">
+      <label for="branch" class="form-label">Parent Branch *</label>
+      <select id="branch" class="form-control custom-input-btn">
+      <option value="">Select Branch</option>
                 <option value="kuala-lumpur">Kuala Lumpur</option>
                 <option value="selangor">Selangor</option>
                 <option value="johor">Johor Bahru</option>
@@ -47,105 +84,71 @@
                 <option value="negeri-sembilan">Seremban, Negeri Sembilan</option>
                 <option value="perlis">Kangar, Perlis</option>
                 <option value="putrajaya">Putrajaya</option>
-                <!-- Add more branches as needed -->
-            </select>
-        </div>
-        <h3 class="text-white" >Main Category *</h3>
-            <div class="row mt-2 ml-1 mr-1">
-            <select class="form-control custom-input-btn border border-gray-300 rounded-md p-2 w-full">
-                <option value="">Select a Category</option>
-                <option value="beef">Beef</option>
-                <option value="chinese">Chinese</option>
-                <option value="rice">Rice</option>
-                <option value="steak">Steak</option>
+      </select>
+    </div>
 
-                <!-- Add more branches as needed -->
-            </select>
-        </div>
-        <div class="row mt-2 ml-1 mr-1">
-          <h3 class="text-white mt-10" >Sub Category Name (EN) </ß>
-            <input 
-              type="search" 
-              id="customSearchBox" 
-              name="search" 
-              placeholder="New Sub Category" 
-              autocomplete="on" 
-              class="form-control custom-input-btn me-2 mr-2" 
-            />
-        </div>
-        </div>
-          <!-- Buttons -->
-          <!-- Search Box -->
-          <div class="form-group d-flex align-items-center mb-3 me-3" style="align:right" >
-          <button type="button" class="btn btn-light custom-btn text-dark">Reset</button>
-          <button type="button" class="btn btn-light custom-btn text-dark">Button</button>
-            </div>
-                     
-      </div>
+    <!-- Main Category -->
+    <div class="mb-3">
+      <label for="mainCategory" class="form-label">Main Category *</label>
+      <select id="mainCategory" class="form-control custom-input-btn">
+        <option value="">Select a Category</option>
+        <option value="beef">Beef</option>
+        <option value="chinese">Chinese</option>
+        <!-- Add more options -->
+      </select>
+    </div>
+
+    <!-- Sub Category Name -->
+    <div class="mb-3">
+      <label for="subCategoryName" class="form-label">Sub Category Name (EN)</label>
+      <input type="text" id="subCategoryName" class="form-control custom-input-btn" placeholder="New Sub Category">
+    </div>
+
+    <!-- Buttons -->
+    <div class="d-flex">
+      <button type="button" class="btn custom-btn me-2">Reset</button>
+      <button type="button" class="btn custom-btn">Submit</button>
     </div>
   </div>
 </div>
 
-
-
-
+<!-- Sub Category Table -->
 <div class="card mb-4">
-  <div class="row">
-    <!-- sub category List -->
-        <div class="col-sm-12">
-            <div class="card">
-            <header class="card-header">
-                <div class="row">
-                    <div class="col-7 col-md-9">
-                        <h2 class="h3 card-header-title">Sub-Category Table</h2>
-                    </div>
-                    <div class="col-5 col-md-3 text-end" >
-                    <!-- Search Box -->
-                    <div class="form-group d-flex align-items-center mb-3 me-3">
-                      <input 
-                        type="search" 
-                        id="customSearchBox" 
-                        name="search" 
-                        placeholder="Search here" 
-                        autocomplete="on" 
-                        class="form-control custom-input-btn me-2 mr-2" 
-                      />
-                      <button type="button" class="btn btn-light custom-btn text-dark">Search</button>
-                    </div>
-                  </div>
-                </div>
-            </header>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead style="background:#333333;">
-                                <tr>
-                                    <th class="px-4 py-3">S.No.</th>
-                                    <th class="px-4 py-3">Category Image</th>
-                                    <th class="px-4 py-3">Name</th>
-                                    <th class="px-4 py-3">Status</th>
-                                    <th class="px-4 py-3">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                               
-                                    <tr class="p-2">
-                                        <td class="px-4 py-3"><input type="checkbox" name="emails[]" class="customer-checkbox" value=""></td>
-                                        <td class="px-4 py-3">1</td>
-                                        <td class="px-4 py-3">irstname</td>
-                                        <td class="px-4 py-3">email</td>
-                                        <td class="px-4 py-3">phone</td>
-                                    </tr>
-                               
-                            </tbody>
-                        </table>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-        </div>
+  <div class="card-header d-flex justify-content-between">
+    <h2 class="h3">Sub-Category Table</h2>
+    <div class="d-flex">
+      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search here">
+      <button type="button" class="btn custom-btn">Search</button>
+    </div>
   </div>
-
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>S.No.</th>
+            <th>Category Image</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="{{ asset('img/sample.png') }}" alt="Category" width="50"></td>
+            <td>Sub Category Name</td>
+            <td>Active</td>
+            <td>
+              <button class="btn btn-sm btn-primary">Edit</button>
+              <button class="btn btn-sm btn-danger">Delete</button>
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 @endsection
