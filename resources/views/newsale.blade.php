@@ -207,70 +207,67 @@
       </div>
     
       <!-- Billing Table -->
-    <div class="table-responsive mt-4">
-      <table class="table table-hover" id="myTable">
-        <thead style="background:#333333; color: #fff;">
-          <tr>
-            <th scope="col" class="px-4 py-3">Item</th>
-            <th scope="col" class="px-4 py-3">Qty</th>
-            <th scope="col" class="px-4 py-3">Price</th>
-            <th scope="col" class="px-4 py-3">Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Static Rows -->
-          <tr>
-            <td class="px-4 py-3">Addon</td>
-            <td class="px-4 py-3">5</td>
-            <td class="px-4 py-3">$45.67</td>
-            <td class="px-4 py-3"></td>
-          </tr>
-          <tr>
-            <td class="px-4 py-3">Pav Bhaji</td>
-            <td class="px-4 py-3">3</td>
-            <td class="px-4 py-3">$36.32</td>
-            <td class="px-4 py-3"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="table-responsive mt-4">
+        <table class="table table-hover" id="myTable">
+          <thead style="background:#333333; color: #fff;">
+            <tr>
+              <th scope="col" class="px-4 py-3">Item</th>
+              <th scope="col" class="px-4 py-3">Qty</th>
+              <th scope="col" class="px-4 py-3">Price</th>
+              <th scope="col" class="px-4 py-3">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Static Rows -->
+            <tr>
+              <td class="px-4 py-3">Addon</td>
+              <td class="px-4 py-3">5</td>
+              <td class="px-4 py-3">$45.67</td>
+              <td class="px-4 py-3"></td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Pav Bhaji</td>
+              <td class="px-4 py-3">3</td>
+              <td class="px-4 py-3">$36.32</td>
+              <td class="px-4 py-3"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
     <!-- Summary Section -->
-<div class="">
-    <p class="d-flex justify-content-between text-white"><span>Subtotal:</span><span>0.00</span></p>
-    <p class="d-flex justify-content-between text-white"><span>Product Discount:</span><span>- 0.00</span></p>
-    <p class="d-flex justify-content-between text-white"><span>Extra Discount:</span><span>- 0.00</span></p>
-    <p class="d-flex justify-content-between text-white"><span>VAT/TAX:</span><span>$10.00 </span></p>
+      <div class="">
+          <p class="d-flex justify-content-between text-white"><span>Subtotal:</span><span>0.00</span></p>
+          <p class="d-flex justify-content-between text-white"><span>Product Discount:</span><span>- 0.00</span></p>
+          <p class="d-flex justify-content-between text-white"><span>Extra Discount:</span><span>- 0.00</span></p>
+          <p class="d-flex justify-content-between text-white"><span>VAT/TAX:</span><span>$10.00 </span></p>
 
-    <p class="d-flex justify-content-between h3 text-white"><span>Total:</span><span>$91.99</span></p>
-</div>
+          <p class="d-flex justify-content-between h3 text-white"><span>Total:</span><span>$91.99</span></p>
+      </div>
 
 
 
-<!-- Paid by -->
- <div class="row mt-4">
-    <div class="col-4">
-    <p class="text-white">Paid By :</p>
-</div>
-</div>
-    <div class="row">
-        
-        <div class="col-2">
-            <button class="btn btn-light custom-btn text-dark hover:text-dark">Cash</button>
+    <!-- Paid by -->
+      <div class="row mt-4">
+        <div class="col-4">
+          <p class="text-white">Paid By :</p>
         </div>
-        <div class="col-2">          
-            <button class="btn btn-light custom-btn text-dark hover:text-dark">Card</button>
-</div>
-        </div>
+      </div>
+
+      <div class="d-flex"> 
+        <button class="btn btn-light custom-btn text-dark hover:text-dark mr-3">Cash</button>
+        <button class="btn btn-light custom-btn text-dark hover:text-dark">Card</button>
+      </div>
+
 
     <!-- Action Buttons -->
-    <div class="d-flex justify-content-between mt-4">
-        <button class="btn btn-light custom-btn text-dark hover:text-dark">Cancel Order</button>
-        <button class="btn btn-warning custom-border">Place Order</button>
+      <div class="d-flex justify-content-between mt-4">
+          <button class="btn btn-light custom-btn text-dark hover:text-dark">Cancel Order</button>
+          <button class="btn btn-warning custom-border">Place Order</button>
+      </div>
     </div>
   </div>
-</div>
-    </div>
+  </div>
 </div>
 
 
