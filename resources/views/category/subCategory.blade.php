@@ -2,50 +2,15 @@
 
 @section('content')
 
-<!-- Custom CSS -->
-<style>
-  .breadcrumb {
-    background: transparent;
-  }
-
-  .breadcrumb-item a.path-color {
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  .breadcrumb-item.active {
-    color: #6c757d;
-  }
-
-  .custom-input-btn {
-    border-radius: 5px;
-  }
-
-  .custom-btn {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-  }
-
-  .custom-btn:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-</style>
-
 <!-- Start Breadcrumb -->
 <div class="mb-4">
-  <nav aria-label="breadcrumb">
-    <h1 class="text-white h3">Add a New Sub Category</h1>
-    <ol class="p-0 breadcrumb small">
-      <li class="breadcrumb-item">
-        <a href="./index.html" class="path-color">Home</a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">SubCategory</li>
-    </ol>
-  </nav>
+    <nav aria-label="breadcrumb">
+        <h1 class="text-white h3">Add a New Sub Category</h1>
+        <ol class="p-0 bg-transparent breadcrumb small">
+            <li class="breadcrumb-item "><a href="./index.html" class="path-color">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sub Category</li>
+        </ol>
+    </nav>
 </div>
 <!-- End Breadcrumb -->
 
@@ -101,9 +66,9 @@
   </div>
 
       <!-- Buttons -->
-      <div class="d-flex" style="justify-content: right">
-      <button type="button" class="btn btn-danger me-2" style="margin-right: 10px">Reset</button>
-      <button type="button" class="btn btn-primary">Submit</button>
+      <div class="d-flex justify-content-end mt-4">
+        <button type="reset" class="btn btn-light custom-btn text-dark hover:text-dark">Reset</button>
+        <button type="submit" class="ml-3 btn btn-warning custom-border">Submit</button>
     </div>
 </div>
 
