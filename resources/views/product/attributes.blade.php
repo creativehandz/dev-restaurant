@@ -23,21 +23,21 @@
 </h2>
       </div>
       <div class="col-12 col-md-7 d-flex justify-content-end align-items-center gap-2">
-  <input 
-    type="text" 
-    id="categoryName" 
-    class="form-control custom-input-btn w-auto mr-10" 
-    placeholder="Enter sub category name" 
-  />
-  <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Search</a>
-  <a class="btn btn-primary" href="">+ Add Attribute</a>
-</div>
+        <input 
+          type="text" 
+          id="categoryName" 
+          class="form-control custom-input-btn w-auto mr-10" 
+          placeholder="Enter sub category name" 
+        />
+        <button type="search" class="btn btn-light custom-btn text-dark hover:text-dark">Search</button>
+        <button type="submit" class="ml-3 btn btn-primary custom-border">+ Add Attribute</button>
+      </div>
     </div>
   </header>   
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-hover" id="myTable">
-        <thead style="background:#333333;">
+        <thead>
           <tr>
             <th scope="col" class="px-2 py-2">SL</th>
             <th scope="col" class="px-2 py-2">Name</th>

@@ -54,9 +54,8 @@
       <div class="form-group">
         <img src="https://admin.road2xtechnology.com/public/assets/admin/img/400x400/img2.jpg" width="80px" alt="" class="me-3">
       <div class="d-flex align-items-center">
-  <label for="fileUpload2" class="me-2">Category Image</label>
-  <h4 class="mb-0 text-orange" style="color: orange;">* ratio (1:1)</h4>
-</div>
+        <label for="fileUpload2" class="me-2">Category Image<span class="text-danger">* ratio (1:1)</span></label>
+      </div>
         <div class="input-group">
           <div class="custom-file">
             <input type="file" class="custom-file-input" id="fileUpload1">
@@ -71,8 +70,8 @@
       <div class="form-group">
         <img src="https://admin.road2xtechnology.com/public/assets/admin/img/900x400/img1.jpg" width="160px" alt="" class="me-3">
       <div class="d-flex align-items-center">
-  <label for="fileUpload2" class="me-2">Banner Image</label>
-  <h4 class="mb-0 text-orange" style="color: orange;">* ratio (8:1)</h4>
+  <label for="fileUpload2" class="me-2">Banner Image<span class="text-danger">* ratio (8:1)</span></label>
+
 </div>
         <div class="input-group">
           <div class="custom-file">
@@ -84,9 +83,10 @@
     </div>
   </div>
 </div>
-<div class="gap-2 d-flex justify-content-end">
-  <button type="button" class="btn btn-danger me-2" style="margin-right: 10px">Reset</button>
-  <button type="button" class="btn btn-primary">Submit</button>
+
+<div class="d-flex justify-content-end mt-4">
+    <button type="reset" class="btn btn-light custom-btn text-dark hover:text-dark">Reset</button>
+    <button type="submit" class="ml-3 btn btn-warning custom-border">Submit</button>
 </div>
   </div>
 </div>
@@ -221,49 +221,26 @@
         </tbody>
       </table>
       <div class="container mt-4">
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </div>
-
-
-
-<!-- Custom CSS -->
-<style>
-  .custom-input-btn {
-    border-radius: 5px;
-  }
-
-  .custom-btn {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-  }
-
-  .custom-btn:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-
-</style>
 
 @endsection
