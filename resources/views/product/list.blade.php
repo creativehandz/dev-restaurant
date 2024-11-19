@@ -19,30 +19,30 @@
       <div class="col-12 col-md-5">
         <h2 class="h3 card-header-title">
           Product List 
-          <span class="badge bg-dark ms-2 d-inline">138</span>
+          <span class="badge bg-secondary ms-2 d-inline">138</span>
         </h2>
       </div>
     </div>
 
     <div class="row align-items-center">
   <!-- Search Box and Button on the Left -->
-  <div class="col-12 col-md-6 d-flex align-items-center gap-2">
+  <div class="col-12 col-md-6 d-flex align-items-center gap-2 mt-4">
     <input 
       type="text" 
       id="categoryName" 
-      class="form-control custom-input-btn w-auto" 
+      class="form-control custom-input-btn w-auto mr-2" 
       placeholder="Search by Addon name" 
     />
-    <a class="btn btn-success custom-btn" href="">Search</a>
+    <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark">Search</button>
   </div>
   
   <!-- Export and Add Button on the Right -->
   <div class="col-12 col-md-6 d-flex justify-content-end gap-2">
     <a class="btn btn-success custom-btn" style="margin-right: 10px" href="">Export</a>
-    <a class="btn btn-primary" href="">+ Add Addon</a>
+    <a class="btn btn-success  custom-btn text-white" href="">+ Add Addon</a>
   </div>
 </div>
-</div>
+
     
   </header>   
 
@@ -50,7 +50,7 @@
    <div class="flex flex-col text-white justify-center" >
     <div class="table-responsive">
       <table class="table table-hover" id="myTable">
-        <thead style="background:#333333;">
+        <thead>
           <tr>
             <th scope="col" class="px-2 py-2">SL</th>
             <th scope="col" class="px-2 py-2">Product Name</th>
@@ -218,5 +218,5 @@
   </div>
 </div>
 </div>
-
+</div>
 @endsection

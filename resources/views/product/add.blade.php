@@ -82,7 +82,7 @@
         <div class="card mb-4 h-100">
             <header class="card-header">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-6">
                         <h2 class="h3 card-header-title">Product Image
                         </h2>
                     </div>
@@ -207,7 +207,7 @@
                 <div class="card mb-4 h-100">
                     <header class="card-header">
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-6">
                                 <h2 class="h3 card-header-title">Price Information</h2>
                             </div>
                         </div>
@@ -281,15 +281,14 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="">
-                                Turning visibility off will not show this<br> product in the user app and website
-                            </div>
-                            <div class="form-check form-switch">
-
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Visibility</label>
-                            </div>
+                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
+                        <div>
+                            Turning visibility off will not show this<br> product in the user app and website
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Visibility</label>
+                        </div>
                         </div>
 
                     </div>

@@ -18,19 +18,14 @@
     <div class="row">
     <div class="col-12 col-md-5">
       <h2 class="h3 card-header-title">
-  Attribute Table 
-  <span class="badge bg-dark ms-2 d-inline">3</span>
-</h2>
+        Attribute Table 
+        <span class="badge bg-secondary ms-2 d-inline">3</span>
+      </h2>
       </div>
-      <div class="col-12 col-md-7 d-flex justify-content-end align-items-center gap-2">
-        <input 
-          type="text" 
-          id="categoryName" 
-          class="form-control custom-input-btn w-auto mr-10" 
-          placeholder="Enter sub category name" 
-        />
-        <button type="search" class="btn btn-light custom-btn text-dark hover:text-dark">Search</button>
-        <button type="submit" class="ml-3 btn btn-primary custom-border">+ Add Attribute</button>
+      <div class="col-12 col-md-7 d-flex flex-column flex-md-row justify-content-end gap-2">
+        <input type="search" class="form-control custom-input-btn mr-2" placeholder="Search by Category Name">
+        <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark mr-2">Search</button>
+        <button type="submit" id="getsearch" class="btn btn-success custom-btn  hover:text-dark">+ Add Attribute</button>
       </div>
     </div>
   </header>   

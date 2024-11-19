@@ -20,7 +20,7 @@
     <h2 class="h3">English (EN)</h2>
   </div>
   <div class="card-body">
-  <div class="container">
+  <div class="">
   <div class="row">
     <!-- Parent Branch -->
     <div class="mb-3 col-md-6">
@@ -78,14 +78,20 @@
 
 <!-- Sub Category Table -->
 <div class="mb-4 card">
-  <div class="card-header d-flex justify-content-between">
-    <h2 class="h3">Sub-Category Table<span class="badge bg-dark ms-2 d-inline">4</span>
-    </h2>
-    <div class="d-flex">
-      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search by sub category name">
-      <button type="button" class="btn btn-primary">Search</button>
+<div class="card-header">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <h2 class="h3 mb-3 mb-md-0">
+        Sub Category Table 
+        <span class="badge bg-secondary ms-2">4</span>
+      </h2>
+    </div>
+    <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-md-end gap-2">
+    <input type="search" class="form-control custom-input-btn mr-2" placeholder="Search by Sub Category Name">
+    <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark">Search</button>
     </div>
   </div>
+</div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-hover">
