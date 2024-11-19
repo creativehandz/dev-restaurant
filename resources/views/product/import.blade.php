@@ -55,32 +55,12 @@
     </div>
 
     <!-- Buttons Section -->
-    <div class="form-group mb-3 text-end">
-      <button type="button" class="btn btn-light custom-btn text-dark hover:text-dark">Clear</button>
-      <button type="button" class="btn btn-primary custom-btn text-white">Export</button>
-    </div>
+    <div class="d-flex justify-content-end mt-4">
+    <button type="reset" class="btn btn-light custom-btn text-dark hover:text-dark">Clear</button>
+    <button type="submit" class="ml-3 btn btn-warning custom-border">Export</button>
+</div>
 
   </div>
 </div>
 
-<!-- Custom styles for hover effect and file input visibility -->
-<style>
-  .hover\:text-dark:hover {
-    color: #000;
-  }
-
-  .custom-btn {
-    border-radius: 5px;
-    padding: 10px 20px;
-  }
-
-  #fileUpload {
-    display: none;
-  }
-
-  #fileUpload + div:hover {
-    cursor: pointer;
-    background-color: #f0f0f0;
-  }
-</style>
 @endsection
