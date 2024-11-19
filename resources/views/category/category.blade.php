@@ -47,32 +47,32 @@
       <input type="text" id="categoryName" class="form-control custom-input-btn" placeholder="Enter category name">
     </div>
 
-    <div class="container mt-4">
-  <div class="row align-items-center">
-    <!-- Category Image Section -->
-    <div class="col-md-6 d-flex align-items-center">
-      <div class="form-group">
-        <img src="https://admin.road2xtechnology.com/public/assets/admin/img/400x400/img2.jpg" width="80px" alt="" class="me-3">
-      <div class="d-flex align-items-center">
-        <label for="fileUpload2" class="me-2">Category Image<span class="text-danger">* ratio (1:1)</span></label>
-      </div>
-        <div class="input-group">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="fileUpload1">
-            <label class="custom-file-label" for="fileUpload1">Choose file</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Banner Image Section -->
-    <div class="col-md-6 d-flex align-items-center">
-      <div class="form-group">
-        <img src="https://admin.road2xtechnology.com/public/assets/admin/img/900x400/img1.jpg" width="160px" alt="" class="me-3">
-      <div class="d-flex align-items-center">
-  <label for="fileUpload2" class="me-2">Banner Image<span class="text-danger">* ratio (8:1)</span></label>
+        <div class="">
+          <div class="row align-items-center">
+            <!-- Category Image Section -->
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="form-group">
+                <img src="https://admin.road2xtechnology.com/public/assets/admin/img/400x400/img2.jpg" width="80px" alt="" class="me-3">
+              <div class="d-flex align-items-center">
+                <label for="fileUpload2" class="me-2">Category Image<span class="text-danger">* ratio (1:1)</span></label>
+              </div>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="fileUpload1">
+                    <label class="custom-file-label" for="fileUpload1">Choose file</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Banner Image Section -->
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="form-group">
+                <img src="https://admin.road2xtechnology.com/public/assets/admin/img/900x400/img1.jpg" width="160px" alt="" class="me-3">
+              <div class="d-flex align-items-center">
+          <label for="fileUpload2" class="me-2">Banner Image<span class="text-danger">* ratio (8:1)</span></label>
 
-</div>
+        </div>
         <div class="input-group">
           <div class="custom-file">
             <input type="file" class="custom-file-input" id="fileUpload2">
@@ -93,23 +93,30 @@
 
 <!-- Category Table -->
 <div class="mb-4 card">
-  <div class="card-header d-flex justify-content-between">
-    <h2 class="h3">Category Table</h2>
-    <div class="d-flex">
-      <input type="search" class="form-control custom-input-btn me-2" placeholder="Search by Category Name">
-      <button type="button" class="btn btn-primary">Search</button>
+  <div class="card-header">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <h2 class="h3 mb-3 mb-md-0">
+          Category Table 
+          <span class="badge bg-secondary ms-2">138</span>
+        </h2>
+      </div>
+      <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-md-end gap-2">
+      <input type="search" class="form-control custom-input-btn mr-2" placeholder="Search by Category Name">
+      <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark">Search</button>
+      </div>
     </div>
   </div>
   <div class="card-body">
     <div class="table-responsive">
       <table class="table">
-        <thead>
+      <thead class="table-dark w-100">
           <tr>
-            <th>S.No.</th>
-            <th>Category Image</th>
-            <th>Name</th>
-            <th>Status</th>
-            <th>Action</th>
+            <th style="width: 10%;">S.No.</th>
+            <th style="width: 20%;">Category Image</th>
+            <th style="width: 30%;">Name</th>
+            <th style="width: 20%;">Status</th>
+            <th style="width: 20%;">Action</th>
           </tr>
         </thead>
         <tbody>

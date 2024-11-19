@@ -14,24 +14,25 @@
 </div>
 <!-- End Breadcrumb -->
 <div class="card mb-4">
-  <header class="card-header">
+<header class="card-header">
     <div class="row">
-      <div class="col-12 col-md-5">
+    <div class="col-12 col-md-5">
       <h2 class="h3 card-header-title">
-  Review List 
-  <span class="badge bg-dark ms-2 d-inline">2</span>
-</h2>
+        Review List 
+        <span class="badge bg-secondary ms-2 d-inline">2</span>
+      </h2>
       </div>
-<div class="col-12 col-md-7 text-end d-flex flex-wrap justify-content-end">
-    <input type="text" placeholder="Search by product name" class="form-control w-auto me-3" style="margin-right: 10px" />
-    <a class="btn btn-success custom-btn" href="">Search</a>
-</div>
+      <div class="col-12 col-md-7 d-flex flex-column flex-md-row justify-content-end gap-2">
+        <input type="search" class="form-control custom-input-btn mr-2" placeholder="Search by Product Name">
+        <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark mr-2">Search</button>
+
+      </div>
     </div>
-  </header>   
+  </header>    
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-hover" id="myTable">
-        <thead style="background:#333333;">
+        <thead >
           <tr>
             <th scope="col" class="px-2 py-2">SL</th>
             <th scope="col" class="px-2 py-2">Product Name</th>
