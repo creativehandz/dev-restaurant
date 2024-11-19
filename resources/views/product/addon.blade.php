@@ -23,8 +23,8 @@
       </h2>
       </div>
       <div class="col-12 col-md-7 d-flex flex-column flex-md-row justify-content-end gap-2">
-        <input type="search" class="form-control custom-input-btn mr-2" placeholder="Search by Addon Name">
-        <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark mr-2">Search</button>
+        <input type="search" class="form-control custom-input-btn m-2" placeholder="Search by Addon Name">
+        <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark m-2">Search</button>
         <button type="submit" id="getsearch" class="btn btn-success custom-btn  hover:text-dark">+ Add Attribute</button>
       </div>
     </div>

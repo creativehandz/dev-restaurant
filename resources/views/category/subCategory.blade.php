@@ -87,7 +87,7 @@
       </h2>
     </div>
     <div class="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-md-end gap-2">
-    <input type="search" class="form-control custom-input-btn mr-2" placeholder="Search by Sub Category Name">
+    <input type="search" class="form-control custom-input-btn m-2" placeholder="Search by Sub Category Name">
     <button type="submit" id="getsearch" class="btn btn-light custom-btn text-dark hover:text-dark">Search</button>
     </div>
   </div>
