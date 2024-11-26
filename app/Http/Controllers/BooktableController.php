@@ -12,6 +12,7 @@ use Response;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Log;
 
 class BooktableController extends Controller
 {
@@ -22,6 +23,7 @@ class BooktableController extends Controller
 
     public function store(Request $request)
     {
+        Log::info('Data received in store:', $request->all());
         $valdi = $request->validate([
             'person' => 'required',
             'date' => 'required',

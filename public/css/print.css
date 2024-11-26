@@ -1,0 +1,51 @@
+@media print {
+  body * {
+      visibility: hidden; /* Hides all content */
+  }
+  .printable-content, .printable-content * {
+      visibility: visible; /* Makes the table content visible */
+  }
+  .printable-content {
+      position: absolute; /* Positions the content for printing */
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+
+  /* Hide all columns by default */
+  .printable-content th, .printable-content td {
+      display: none;
+  }
+
+  /* Show only specific columns */
+  .printable-content th:nth-child(1), /* S.No */
+  .printable-content td:nth-child(1),
+  .printable-content th:nth-child(2), /* Placed On */
+  .printable-content td:nth-child(2),
+  .printable-content th:nth-child(3), /* Fullfillment */
+  .printable-content td:nth-child(3),
+  .printable-content th:nth-child(4), /* Name */
+  .printable-content td:nth-child(4),
+  .printable-content th:nth-child(5), /* Email & Phone number */
+  .printable-content td:nth-child(5),
+  .printable-content th:nth-child(6), /* Person */
+  .printable-content td:nth-child(6),
+  .printable-content th:nth-child(7), /* Promo Code */
+  .printable-content td:nth-child(7) {
+      display: table-cell;
+  }
+
+  /* Make headers and text dark */
+  .printable-content th, .printable-content td {
+      font-weight: bold;
+      color: #000; /* Ensure text is dark */
+  }
+
+  /* Hide pagination content */
+  .pagination, /* If pagination uses this class */
+  .printable-content td[colspan], /* If pagination spans across a column */
+  .pagination-container, /* Adjust to the actual class used */
+  .page-links {
+      display: none !important;
+  }
+}
