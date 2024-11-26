@@ -259,11 +259,9 @@
                   })
                   .then((data) => {
                     console.log("Success:", data);
-                    alert("Reservation submitted successfully!");
                   })
                   .catch((error) => {
-                    console.error("Error:", error);
-                    alert("Failed to submit reservation. Please try again.");
+                    console.error("Error:", error);                 
                   });
               });
             });
