@@ -137,51 +137,66 @@
           <form id="editForm" action="https://tfcmockup.com/admin/api/book-table" method="post">
               {{ csrf_field() }}
               
-              <div class="form-group">
-                <label for="firstname">First Name</label>
-                <input type="text" class="form-control" id="firstname" name="firstname" required>
+              <div class="row">
+                <!-- First Name and Last Name in the same line -->
+                <div class="form-group mb-4 col-md-6">
+                  <label for="firstname">First Name</label>
+                  <input type="text" class="form-control" id="firstname" name="firstname">
+                </div>
+                <div class="form-group mb-4 col-md-6">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" class="form-control" id="lastname" name="lastname">
+                </div>
               </div>
-              
-              <div class="form-group">
-                <label for="lastname">Last Name</label>
-                <input type="text" class="form-control" id="lastname" name="lastname" required>
-              </div>
-              
+
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
               </div>
-              
-              <div class="form-group">
-                <label for="countryCode">Country Code</label>
-                <input type="text" class="form-control" id="countryCode" name="countryCode">
+
+              <div class="row">
+                <!-- Country Code and Phone Number in the same line -->
+                <div class="form-group mb-4 col-md-6">
+                  <label for="countryCode">Country Code</label>
+                  <input type="text" class="form-control" id="countryCode" name="countryCode">
+                </div>
+                <div class="form-group mb-4 col-md-6">
+                  <label for="phone">Phone Number</label>
+                  <input type="text" class="form-control" id="phone" name="phone">
+                </div>
               </div>
-              
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="text" class="form-control" id="phone" name="phone" maxlength="20" required>
+
+              <div class="row">
+                <!-- Date and Time in the same line -->
+                <div class="form-group mb-4 col-md-6">
+                  <label for="date">Date</label>
+                  <input type="date" class="form-control" id="date" name="date">
+                </div>
+                <div class="form-group mb-4 col-md-6">
+                  <label for="time">Time</label>
+                  <input type="time" class="form-control" id="time" name="time">
+                </div>
               </div>
+               
               
-              <div class="form-group">
+              <div class="row">          
+              <div class="form-group mb-4 col-md-4">
                 <label for="person">Number of Guests</label>
                 <select class="form-control" id="person" name="person">
                   <option value="2">2 People</option>
                   <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="7">7 People</option>
+                  <option value="8">8 People</option>
+                  <option value="9">9 People</option>
+                  <option value="10">10 People</option>
                   <!-- Add more options as needed -->
                 </select>
               </div>
-              
-              <div class="form-group">
-                <label for="date">Date</label>
-                <input type="date" class="form-control" id="date" name="date" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="time">Time</label>
-                <input type="time" class="form-control" id="time" name="time" required>
-              </div>
-              
-              <div class="form-group">
+                         
+              <div class="form-group mb-4 col-md-4">
                 <label for="occasion">Occasion</label>
                 <select class="form-control" id="occasion" name="occasion">
                   <option value="Birthday Party">Birthday Party</option>
@@ -189,16 +204,18 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
+
+              <div class="form-group mb-4 col-md-4">
+                <label for="promocode">Promocode</label>
+                <input type="text" class="form-control" id="promocode" name="promocode">
+              </div>
+          </div>
               
               <div class="form-group">
                 <label for="comments">Comments</label>
                 <textarea class="form-control" id="comments" name="comments"></textarea>
               </div>
               
-              <div class="form-group">
-                <label for="promocode">Promocode</label>
-                <input type="text" class="form-control" id="promocode" name="promocode">
-              </div>
               
               <input type="hidden" name="promo" value="no">
               <input type="hidden" name="source" value="web">
