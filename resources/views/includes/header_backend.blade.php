@@ -1,8 +1,8 @@
 <header class="u-header">
     <div class="u-header-left">
         <a class="u-header-logo" href="/dashboard">
-            <img class="u-logo-desktop" src="{{ asset('/img/main-logo-two.png') }}" width="60" alt="Stream Dashboard">
-            <img class="img-fluid u-logo-mobile" src="{{ asset('/img/main-logo-two.png') }}" width="50" alt="Stream Dashboard"> 
+            <img class="u-logo-desktop" src="{{ asset('/img/display-logo.png') }}" width="60" alt="Stream Dashboard">
+            <img class="img-fluid u-logo-mobile" src="{{ asset('/img/display-logo.png') }}" width="50" alt="Stream Dashboard"> 
         </a>
     </div>
 

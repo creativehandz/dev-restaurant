@@ -17,6 +17,7 @@
   <!-- Theme Styles -->
   <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/print.css') }}" media="print">
   <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.css') }}">
   <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
   <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
@@ -31,6 +32,57 @@
       width: 70px !important;
       height: 70px !important;
     }
+    @media print {
+    body * {
+        visibility: hidden; /* Hides all content */
+    }
+    .printable-content, .printable-content * {
+        visibility: visible; /* Makes the table content visible */
+    }
+    .printable-content {
+        position: absolute; /* Positions the content for printing */
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    /* Hide all columns by default */
+    .printable-content th, .printable-content td {
+        display: none;
+    }
+
+    /* Show only specific columns */
+    .printable-content th:nth-child(1), /* S.No */
+    .printable-content td:nth-child(1),
+    .printable-content th:nth-child(2), /* Placed On */
+    .printable-content td:nth-child(2),
+    .printable-content th:nth-child(3), /* Fullfillment */
+    .printable-content td:nth-child(3),
+    .printable-content th:nth-child(4), /* Name */
+    .printable-content td:nth-child(4),
+    .printable-content th:nth-child(5), /* Email & Phone number */
+    .printable-content td:nth-child(5),
+    .printable-content th:nth-child(6), /* Person */
+    .printable-content td:nth-child(6),
+    .printable-content th:nth-child(7), /* Promo Code */
+    .printable-content td:nth-child(7) {
+        display: table-cell;
+    }
+
+    /* Make headers and text dark */
+    .printable-content th, .printable-content td {
+        font-weight: bold;
+        color: #000; /* Ensure text is dark */
+    }
+
+    /* Hide pagination content */
+    .pagination, /* If pagination uses this class */
+    .printable-content td[colspan], /* If pagination spans across a column */
+    .pagination-container, /* Adjust to the actual class used */
+    .page-links {
+        display: none !important;
+    }
+}
   </style>
 </head>
 
@@ -82,7 +134,7 @@
 
           <div id="newReservationContent">
 
-            <form method="post" id="bookorderh">
+          <form action="{{ url('update-record') }}" method="post" id="editForm">
               {{ csrf_field() }}
               <div class="row">
                 <div class="form-group mb-4 col-4">
@@ -191,11 +243,46 @@
 
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <input type="submit" id="saveEvent" class="col-md-3 offset-md-5 btn btn-primary" value="save">
+            <button type="submit" class="btn btn-secondary">Submit</button>
           </div>
-          </form>
+        </form>
         </div>
+              <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const form = document.getElementById('editForm');
 
+              form.addEventListener('submit', async function (e) {
+                  e.preventDefault(); // Prevent default form submission
+
+                  // Collect form data
+                  const formData = new FormData(form);
+
+                  try {
+                      const response = await fetch("https://tfcmockup.com/admin/api/book-table", {
+                          method: "POST",
+                          body: formData,
+                      });
+
+                      // Parse the JSON response
+                      const result = await response.json();
+
+                      if (response.ok) {
+                          // Success handling
+                          console.log(result);
+                          alert(result.msg || "Booking added successfully!");
+                      } else {
+                          // Error handling
+                          console.error('Error:', result);
+                          alert(result.error || "Something went wrong!");
+                      }
+                  } catch (error) {
+                      // Network or other errors
+                      console.error('Fetch Error:', error);
+                      alert("Failed to submit the form. Please try again.");
+                  }
+              });
+          });
+      </script>
         <script>
           document.getElementById('newReservation').addEventListener('change', function() {
             document.getElementById('newReservationContent').style.display = 'block';
@@ -250,7 +337,7 @@
             <div class="row"></div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <input type="submit" class="col-md-3 offset-md-5 btn btn-primary save-btn" value="save">
+              <input type="submit" class="col-md-3 offset-md-5 btn btn-primary save-btn" value="Submit">
             </div>
           </form>
         </div>

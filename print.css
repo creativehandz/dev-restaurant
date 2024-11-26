@@ -1,0 +1,54 @@
+/* General Reset for Print */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+/* Hide Unwanted Elements */
+.sidebar, .navbar, .breadcrumb, .card-header, .footer, .non-printable, .form-inline, .custom-btn, .btn, .pagination {
+    display: none !important;
+}
+
+/* Show Only the Printable Area */
+.printable-content {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Style for Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Make Text Readable */
+th {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+td {
+    color: #000;
+}
+
+/* Remove Print Margins */
+@page {
+    margin: 10mm;
+}

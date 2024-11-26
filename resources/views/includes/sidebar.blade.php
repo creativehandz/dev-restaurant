@@ -2,7 +2,7 @@
   <div class="u-sidebar-inner pl-0 pr-0 pt-5">
     <header class="u-sidebar-header">
       <a class="u-sidebar-logo" href="index.html">
-        <img class="img-fluid" src="{{ asset('/img/main-logo-two.png') }}" width="80" alt="Stream Dashboard">
+        <img class="img-fluid" src="{{ asset('/img/display-logo.png') }}" width="80" alt="Stream Dashboard">
       </a>
     </header>
     <nav class="u-sidebar-nav pr-4 pl-0">

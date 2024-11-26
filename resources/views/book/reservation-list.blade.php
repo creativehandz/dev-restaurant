@@ -60,7 +60,9 @@ use App\Models\Book;
 
           </div>
           <div class="form-group mb-3 mr-3 ">
-            <a href="#" id="" onclick="window.print();return false;" class="btn btn-success custom-border">Print</a>
+          <a href="#" id="" onclick="window.print();return false;" class="btn btn-success custom-border">Print</a>
+          <!-- <button onclick="window.print()" class="btn btn-primary mb-3 non-printable">Print Reservation List</button> -->
+          
             <!--div id="records-container"></div-->
 
           </div>
@@ -78,6 +80,7 @@ use App\Models\Book;
       </div>
     </div>
     <div class="table-responsive">
+    <div class="printable-content">
       <table class="table table-hover" id="myTable">
         <thead style="background:#333333;">
           <tr>
@@ -146,6 +149,7 @@ use App\Models\Book;
       <td>Records Not Found</td>
     </tr> @endif </tbody>
     </table>
+              </div>
   </div>
 </div> @endsection
 @section('scripts')

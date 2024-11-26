@@ -13,7 +13,7 @@
             <div class="mb-3">
                 <div class="py-3 mb-auto">
                     <a class="u-login-form mb-auto text-center" href="index.html">
-                        <img class="img-fluid" src="{{ asset('img/main-logo-two.png') }}" width="80" alt="Restaurant Admin"> 
+                        <img class="img-fluid" src="{{ asset('img/display-logo.png') }}" width="80" alt="Restaurant Admin"> 
                     </a>
                 </div>
                 <h1 class="h2 text-white">Welcome Back!</h1>

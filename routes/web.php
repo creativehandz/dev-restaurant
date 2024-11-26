@@ -86,7 +86,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/record/{id}', [BooktableController::class, 'editor']);
 
-    Route::post('/update-record', [BooktableController::class, 'update']);
+    Route::post('/update-record', [BooktableController::class, 'update'])->name('update-record');
 
     //Settings
     Route::get('set-list', [SettingController::class, 'index'])->name(
@@ -96,6 +96,10 @@ Route::middleware(['auth'])->group(function () {
         'set-list-store'
     );
 });
+Route::post('update-record', function (Request $request) {
+    return response()->json(['message' => 'Route is working']);
+});
+// Route::post('/update-record', [BooktableController::class, 'update'])->name('update-record');
 
 Route::controller(LoginRegisterController::class)->group(function () {
     Route::get('/register', 'register')->name('register');
