@@ -133,8 +133,12 @@
           </div>
 
           <div id="newReservationContent">
+          <div id="formNotification" class="alert alert-success d-none" role="alert">
+              Reservation successfully added!
+          </div>
 
-          <form id="editForm" action="https://tfcmockup.com/admin/api/book-table" method="post">
+
+          <form id="editForm" method="post">
               {{ csrf_field() }}
               
               <div class="row">
@@ -244,25 +248,35 @@
 
                 console.log("Sending JSON Data:", jsonData);
 
-                fetch(form.action, {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify(jsonData),
-                })
-                  .then((response) => {
-                    if (!response.ok) {
-                      throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    return response.json();
-                  })
-                  .then((data) => {
-                    console.log("Success:", data);
-                  })
-                  .catch((error) => {
-                    console.error("Error:", error);                 
-                  });
+    // Simulate form submission (replace with actual fetch logic)
+    fetch("https://tfcmockup.com/admin/api/book-table", {
+        method: "POST",
+        body: new FormData(this),
+    })
+        .then((response) => {
+            if (response.ok) {
+                // Show success notification
+                const notification = document.getElementById("formNotification");
+                notification.textContent = "Reservation successfully added!";
+                notification.classList.remove("d-none");
+                notification.classList.add("alert-success");
+
+                // Close modal after a short delay
+                setTimeout(() => {
+                    $(".bd-example-modal-lg").modal("hide");
+                    notification.classList.add("d-none");
+                }, 2000);
+            } else {
+                throw new Error("Failed to add reservation");
+            }
+        })
+        .catch((error) => {
+            // Show error notification
+            const notification = document.getElementById("formNotification");
+            notification.textContent = "Error: " + error.message;
+            notification.classList.remove("d-none");
+            notification.classList.add("alert-danger");
+        });
               });
             });
       </script>
