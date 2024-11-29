@@ -311,6 +311,55 @@
             }
           });
         </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const form = document.getElementById("editForm");
+                if (!form) {
+                    console.error("Form not found.");
+                    return;
+                }
+
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+
+                    const formData = new FormData(form);
+
+                    // Prepare JSON data
+                    const jsonData = {
+                        event_details: formData.get("description"), // Map to 'description'
+                        event_date: formData.get("date"),          // Ensure 'date' is in YYYY-MM-DD format
+                        event_time: formData.get("time"),          // Ensure 'time' is in HH:MM:SS format
+                        guest_emails: formData.get("emails"),      // Map to 'emails'
+                    };
+
+                    console.log("Sending JSON Data:", jsonData);
+
+                    fetch("https://tfcmockup.com/admin/api/create-event", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json", // Specify JSON content
+                        },
+                        body: JSON.stringify(jsonData), // Convert to JSON string
+                    })
+                        .then((response) => {
+                            if (!response.ok) throw response;
+                            return response.json();
+                        })
+                        .then((data) => {
+                            console.log("Success:", data);
+                            alert("Event created and invitation sent successfully!");
+                        })
+                        .catch(async (error) => {
+                            const errorMessage = await error.json();
+                            console.error("Error:", errorMessage);
+                            alert(
+                                "Failed to create event: " +
+                                (errorMessage.msg || "Unknown validation error")
+                            );
+                        });
+                });
+            });
+          </script>
 
 
       </div>
