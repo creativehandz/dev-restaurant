@@ -32,7 +32,7 @@
       width: 70px !important;
       height: 70px !important;
     }
-    @media print {
+@media print {
     body * {
         visibility: hidden; /* Hides all content */
     }
@@ -114,7 +114,7 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add New Reservation</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Add New Reservationn</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -133,155 +133,152 @@
           </div>
 
           <div id="newReservationContent">
-
-          <form action="{{ url('update-record') }}" method="post" id="editForm">
-              {{ csrf_field() }}
-              <div class="row">
-                <div class="form-group mb-4 col-4">
-                  <label for="defaultInput">Number of Guests</label>
-                  <select class="form-control" id="person" name="person">
-                    <option class="text-black" value="2">2 People</option>
-                    <option class="text-black" value="3">3 People</option>
-                    <option class="text-black" value="4">4 People</option>
-                    <option class="text-black" value="5">5 People</option>
-                    <option class="text-black" value="6">6 People</option>
-                    <option class="text-black" value="7">7 People</option>
-                    <option class="text-black" value="8">8 People</option>
-                    <option class="text-black" value="9">9 People</option>
-                    <option class="text-black" value="10">10 People</option>
-                  </select>
-                </div>
-                <div class="form-group mb-4 col-4">
-                  <label for="defaultInputdate">Date</label>
-                  <input type="date" readonly class="form-control" id="defaultInputdate" name="date">
-                </div>
-                <div class="form-group mb-4 col-4">
-                  <label for="defaultInputime">Time</label>
-                  <!-- <input type="time" class="form-control" id="defaultInputime" name="event_time" style="display: none"> -->
-                  <select
-                    name="event_time"
-                    required
-                    id="defaultInputime"
-                    class="form-control"
-                  >
-                  </select>
-                </div>
-                <div class="form-group mb-4 col-6">
-                  <label for="defaultInputfname">First Name</label>
-                  <input type="text" class="form-control @error('name') is-invalid @enderror" id="firstname" name="firstname" value="{{ old('name') }}">
-                </div>
-                <div class="form-group mb-4 col-6">
-                  <label for="defaultInputlastname">Last Name</label>
-                  <input type="text" class="form-control @error('lastname') is-invalid @enderror" id="lastname" name="lastname" value="{{ old('lastname') }}">
-                </div>
-                <div class="form-group mb-4 col-6">
-                  <label for="defaultInputphone">Phone Number</label>
-                  <input type="text" class="form-control" id="defaultInputphone" maxlength="10" name="phone">
-                </div>
-                <div class="form-group mb-4 col-6">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}">
-                </div>
-                <div class="form-group mb-4 col-6">
-                  <label for="defaultInputocc">Select An Occasion</label>
-                  <select class="form-control" name="occasion" id="defaultInputocc">
-                    <option value="Select An Occasion">Select An Occasion</option>
-                    <option value="Birthday Party">Birthday Party</option>
-                    <option value="Anniversary Party">Anniversary Party</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group mb-4 col-6 promocode" style="display: none;">
-                  <label for="defaultInputocc">Promocode</label>
-                  <select class="form-control" name="promocode" id="promocode">
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                  </select>
-                </div>
-                <div class="form-group mb-4 col-12 comment">
-                  <label for="defaultInput">Add A Special Request</label>
-                  <textarea class="form-control" id="eventName" name="comment"></textarea>
-                </div>
-              </div>
+          <div id="formNotification" class="alert alert-success d-none" role="alert">
+              Reservation successfully added!
           </div>
 
-          <div id="otherEventsContent" style="display:none;">
-            <input type="hidden" name="guest_emails" id="guestEmails">
-            <!-- Add content for other events here -->
-            <div class="row">
-              <div class="form-group mb-4 col-12">
-                <label for="otherEventDetails">Event Details</label>
-                <textarea class="form-control" id="otherEventDetails" name="event_details"></textarea>
+
+          <form id="editForm" method="post">
+              {{ csrf_field() }}
+              
+              <div class="row">
+                <!-- First Name and Last Name in the same line -->
+                <div class="form-group mb-4 col-md-6">
+                  <label for="firstname">First Name</label>
+                  <input type="text" class="form-control" id="firstname" name="firstname">
+                </div>
+                <div class="form-group mb-4 col-md-6">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" class="form-control" id="lastname" name="lastname">
+                </div>
               </div>
-              <div class="form-group mb-4 col-6">
-                <label for="defaultInputdate">Date</label>
-                <input type="date" class="form-control" readonly id="defaultEventdate" name="event_date">
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
               </div>
-              <div class="form-group mb-4 col-6">
-                <label for="defaultInputime">Time</label>
-                <!-- <input type="time" class="form-control" id="defaultInputime" name="event_time" style="display: none"> -->
-                <select
-                  name="event_time"
-                  required
-                  id="defaultInputime"
-                  class="form-control"
-                >
+
+              <div class="row">
+                <!-- Country Code and Phone Number in the same line -->
+                <div class="form-group mb-4 col-md-6">
+                  <label for="countryCode">Country Code</label>
+                  <input type="text" class="form-control" id="countryCode" name="countryCode">
+                </div>
+                <div class="form-group mb-4 col-md-6">
+                  <label for="phone">Phone Number</label>
+                  <input type="text" class="form-control" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Date and Time in the same line -->
+                <div class="form-group mb-4 col-md-6">
+                  <label for="date">Date</label>
+                  <input type="date" class="form-control" id="date" name="date">
+                </div>
+                <div class="form-group mb-4 col-md-6">
+                  <label for="time">Time</label>
+                  <input type="time" class="form-control" id="time" name="time">
+                </div>
+              </div>
+               
+              
+              <div class="row">          
+              <div class="form-group mb-4 col-md-4">
+                <label for="person">Number of Guests</label>
+                <select class="form-control" id="person" name="person">
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="7">7 People</option>
+                  <option value="8">8 People</option>
+                  <option value="9">9 People</option>
+                  <option value="10">10 People</option>
+                  <!-- Add more options as needed -->
                 </select>
               </div>
-              <div class="form-group mb-4 col-6">
-                <label for="email">Add Guests</label>
-                <div class="input-group">
-                  <input type="email" class="form-control" id="guestEmail" name="guestEmail">
-                  <div class="input-group-append">
-                    <button type="button" class="btn btn-primary" id="addGuestEmailButton">Add</button>
-                  </div>
-                </div>
-                <div id="guestList" class="mt-2"></div>
+                         
+              <div class="form-group mb-4 col-md-4">
+                <label for="occasion">Occasion</label>
+                <select class="form-control" id="occasion" name="occasion">
+                  <option value="Birthday Party">Birthday Party</option>
+                  <option value="Anniversary Party">Anniversary Party</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
-            </div>
-          </div>
 
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-secondary">Submit</button>
+              <div class="form-group mb-4 col-md-4">
+                <label for="promocode">Promocode</label>
+                <input type="text" class="form-control" id="promocode" name="promocode">
+              </div>
           </div>
-        </form>
+              
+              <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea class="form-control" id="comments" name="comments"></textarea>
+              </div>
+              
+              
+              <input type="hidden" name="promo" value="no">
+              <input type="hidden" name="source" value="web">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
               <script>
-          document.addEventListener('DOMContentLoaded', function () {
-              const form = document.getElementById('editForm');
+              document.addEventListener("DOMContentLoaded", () => {
+              const form = document.getElementById("editForm");
 
-              form.addEventListener('submit', async function (e) {
-                  e.preventDefault(); // Prevent default form submission
+              if (!form) {
+                console.error("Form not found.");
+                return;
+              }
 
-                  // Collect form data
-                  const formData = new FormData(form);
+              form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
 
-                  try {
-                      const response = await fetch("https://tfcmockup.com/admin/api/book-table", {
-                          method: "POST",
-                          body: formData,
-                      });
+                const formData = new FormData(form);
+                const jsonData = {};
 
-                      // Parse the JSON response
-                      const result = await response.json();
+                // Convert FormData to JSON object
+                formData.forEach((value, key) => {
+                  jsonData[key] = value;
+                });
 
-                      if (response.ok) {
-                          // Success handling
-                          console.log(result);
-                          alert(result.msg || "Booking added successfully!");
-                      } else {
-                          // Error handling
-                          console.error('Error:', result);
-                          alert(result.error || "Something went wrong!");
-                      }
-                  } catch (error) {
-                      // Network or other errors
-                      console.error('Fetch Error:', error);
-                      alert("Failed to submit the form. Please try again.");
-                  }
+                console.log("Sending JSON Data:", jsonData);
+
+    // Simulate form submission (replace with actual fetch logic)
+    fetch("https://tfcmockup.com/admin/api/book-table", {
+        method: "POST",
+        body: new FormData(this),
+    })
+        .then((response) => {
+            if (response.ok) {
+                // Show success notification
+                const notification = document.getElementById("formNotification");
+                notification.textContent = "Reservation successfully added!";
+                notification.classList.remove("d-none");
+                notification.classList.add("alert-success");
+
+                // Close modal after a short delay
+                setTimeout(() => {
+                    $(".bd-example-modal-lg").modal("hide");
+                    notification.classList.add("d-none");
+                }, 2000);
+            } else {
+                throw new Error("Failed to add reservation");
+            }
+        })
+        .catch((error) => {
+            // Show error notification
+            const notification = document.getElementById("formNotification");
+            notification.textContent = "Error: " + error.message;
+            notification.classList.remove("d-none");
+            notification.classList.add("alert-danger");
+        });
               });
-          });
+            });
       </script>
         <script>
           document.getElementById('newReservation').addEventListener('change', function() {
@@ -314,6 +311,55 @@
             }
           });
         </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const form = document.getElementById("editForm");
+                if (!form) {
+                    console.error("Form not found.");
+                    return;
+                }
+
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+
+                    const formData = new FormData(form);
+
+                    // Prepare JSON data
+                    const jsonData = {
+                        event_details: formData.get("description"), // Map to 'description'
+                        event_date: formData.get("date"),          // Ensure 'date' is in YYYY-MM-DD format
+                        event_time: formData.get("time"),          // Ensure 'time' is in HH:MM:SS format
+                        guest_emails: formData.get("emails"),      // Map to 'emails'
+                    };
+
+                    console.log("Sending JSON Data:", jsonData);
+
+                    fetch("https://tfcmockup.com/admin/api/create-event", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json", // Specify JSON content
+                        },
+                        body: JSON.stringify(jsonData), // Convert to JSON string
+                    })
+                        .then((response) => {
+                            if (!response.ok) throw response;
+                            return response.json();
+                        })
+                        .then((data) => {
+                            console.log("Success:", data);
+                            alert("Event created and invitation sent successfully!");
+                        })
+                        .catch(async (error) => {
+                            const errorMessage = await error.json();
+                            console.error("Error:", errorMessage);
+                            alert(
+                                "Failed to create event: " +
+                                (errorMessage.msg || "Unknown validation error")
+                            );
+                        });
+                });
+            });
+          </script>
 
 
       </div>
@@ -332,7 +378,7 @@
         </div>
         <div class="modal-body">
           <div class="alert-sucess1 alert alert-success" style="display:none;"></div>
-          <form action="{{ url('update-record') }}" method="post" id="editForm">
+          <form>
             {{ csrf_field() }}
             <div class="row"></div>
             <div class="modal-footer">
